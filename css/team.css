@@ -1,0 +1,29 @@
+.profilecomp {
+	font-size: 0.8rem;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	max-width: 200px;
+}
+
+.profilelink {
+  font-size: 1.7em;
+	color: white;
+}
+
+.profilelink:hover {
+	color: rgb(211, 211, 211);
+}
+
+p {
+	margin-top: 0em;
+  font-size: 1em;
+	width: 90%;
+}
+
+.profileimg {
+	max-width: 100%;
+	border: solid black 2px;
+	border-radius: 100%;
+	align-self: center;
+}
