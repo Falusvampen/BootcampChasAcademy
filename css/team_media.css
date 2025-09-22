@@ -8,7 +8,7 @@
     margin: auto;
   }
 
-  .profilelink {
+  .profileheading {
     align-self: center;
   }
 }
@@ -23,15 +23,19 @@
     margin: auto;
   }
 
-  .profilelink {
+  .profileheading {
     align-self: center;
   }
 }
 
 @media (min-width: 768px) {
   .hero {
-		height: 12em;
+    height: 12em;
     background-size: cover;
+  }
+
+  .profileheading {
+    align-self: start;
   }
 }
 
@@ -42,9 +46,6 @@
 }
 
 @media (min-width: 1200px) {
-  .profilelink {
-    align-self: start;
-  }
 }
 
 @media (min-width: 1400px) {

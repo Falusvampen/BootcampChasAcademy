@@ -8,6 +8,7 @@
   --primary-text-color: white;
   --shadow-dark: rgb(0, 0, 0, 0.7);
   --shadow-light: rgb(0, 0, 0, 0.15);
+	--shadow-header: rgb(0, 0, 0, 0.4);
   --border-color-light: rgb(255, 255, 255, 0.1);
   --transition-speed: 0.2s;
 }
@@ -107,7 +108,7 @@ header {
   display: flex;
   align-items: center;
   min-height: 50px;
-  box-shadow: 0 5px 10px var(--shadow-light);
+  box-shadow: 0 5px 10px var(--shadow-header);
 	z-index: 5;
 }
 
