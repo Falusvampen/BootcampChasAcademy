@@ -8,6 +8,7 @@
   --primary-text-color: white;
   --shadow-dark: rgb(0, 0, 0, 0.7);
   --shadow-light: rgb(0, 0, 0, 0.15);
+	--shadow-header: rgb(0, 0, 0, 0.4);
   --border-color-light: rgb(255, 255, 255, 0.1);
   --transition-speed: 0.2s;
 }
@@ -36,7 +37,7 @@ main {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -45,6 +46,21 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
+}
+
+.team_qa_heading {
+  margin: 0 0 0 5em;
+}
+
+.team_qa_hero {
+  display: flex;
+  align-items: center;
+  background-image: url("../images/Computer\ \(hero\).png");
+  background-position: 0% 55%;
+  background-size: cover;
+	margin: 0 0 5em 0;
+  height: 12em;
+	box-shadow: 0 0 16px var(--shadow-light);
 }
 
 /*3. GEMENSAMMA KOMPONENTSTILAR*/
@@ -107,7 +123,8 @@ header {
   display: flex;
   align-items: center;
   min-height: 50px;
-  box-shadow: 0 5px 10px var(--shadow-light);
+  box-shadow: 0 5px 10px var(--shadow-header);
+	z-index: 5;
 }
 
 header nav {
