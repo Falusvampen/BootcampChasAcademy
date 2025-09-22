@@ -1,3 +1,7 @@
+.profiles {
+	flex-direction: row;
+}
+
 .profilecomp {
   font-size: 0.92rem;
   display: flex;
