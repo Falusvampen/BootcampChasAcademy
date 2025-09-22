@@ -58,8 +58,9 @@ h3 {
   background-image: url("../images/Computer\ \(hero\).png");
   background-position: 0% 55%;
   background-size: cover;
-  margin: 0 0 5em 0;
+	margin: 0 0 5em 0;
   height: 12em;
+	box-shadow: 0 0 16px var(--shadow-light);
 }
 
 /*3. GEMENSAMMA KOMPONENTSTILAR*/

@@ -1,7 +1,13 @@
+.team_main {
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
+
 .profiles {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+	justify-content: center;
+	align-items: center;
   flex-wrap: wrap;
   margin-bottom: 5em;
   gap: 6em;
