@@ -108,6 +108,7 @@ header {
   align-items: center;
   min-height: 50px;
   box-shadow: 0 5px 10px var(--shadow-light);
+	z-index: 5;
 }
 
 header nav {
