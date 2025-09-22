@@ -4,13 +4,11 @@
   }
 }
 
-
 @media (min-width: 576px) {
-.profileheading {
+  .profileheading {
     align-self: center;
   }
 }
-
 
 @media (min-width: 768px) {
   .profileheading {
@@ -18,14 +16,17 @@
   }
 }
 
-
 @media (min-width: 992px) {
 }
 
-
 @media (min-width: 1200px) {
+  .profiles {
+    margin: 0 15em 5em 15em;
+  }
 }
 
-
 @media (min-width: 1400px) {
+  .profiles {
+    margin: 0 0 5em 0;
+  }
 }
