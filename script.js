@@ -31,6 +31,6 @@ function loadComponent(url, elementId) {
 // https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener
 // https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 document.addEventListener("DOMContentLoaded", function () {
-  loadComponent("components/header.html", "header-placeholder");
-  loadComponent("components/footer.html", "footer-placeholder");
+  loadComponent("./components/header.html", "header-placeholder");
+  loadComponent("./components/footer.html", "footer-placeholder");
 });
