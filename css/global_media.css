@@ -1,0 +1,45 @@
+@media (max-width: 575px) {
+  .team_qa_hero {
+    height: 8em;
+    background-size: unset;
+  }
+
+  .team_qa_heading {
+    margin: auto;
+  }
+}
+
+
+@media (min-width: 576px) {
+  .team_qa_hero {
+    height: 8em;
+    background-size: unset;
+  }
+
+  .team_qa_heading {
+    margin: auto;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .team_qa_hero {
+    height: 12em;
+    background-size: cover;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .team_qa_heading {
+    margin: 0 0 0 5em;
+  }
+}
+
+
+@media (min-width: 1200px) {
+}
+
+
+@media (min-width: 1400px) {
+}

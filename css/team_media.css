@@ -1,52 +1,31 @@
 @media (max-width: 575px) {
-  .hero {
-    height: 8em;
-    background-size: unset;
-  }
-
-  .teamheading {
-    margin: auto;
-  }
-
   .profileheading {
     align-self: center;
   }
 }
+
 
 @media (min-width: 576px) {
-  .hero {
-    height: 8em;
-    background-size: unset;
-  }
-
-  .teamheading {
-    margin: auto;
-  }
-
-  .profileheading {
+.profileheading {
     align-self: center;
   }
 }
 
-@media (min-width: 768px) {
-  .hero {
-    height: 12em;
-    background-size: cover;
-  }
 
+@media (min-width: 768px) {
   .profileheading {
     align-self: start;
   }
 }
 
+
 @media (min-width: 992px) {
-  .teamheading {
-    margin: 0 0 0 5em;
-  }
 }
+
 
 @media (min-width: 1200px) {
 }
+
 
 @media (min-width: 1400px) {
 }
