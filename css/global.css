@@ -1,13 +1,38 @@
-/* Det här importerar Roboto typsnittet */
+/*1. IMPORTS & VARIABLER*/
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@import */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+:root {
+  --primary-bg-color: #501d1d;
+  --primary-text-color: white;
+  --shadow-dark: rgb(0, 0, 0, 0.7);
+  --shadow-light: rgb(0, 0, 0, 0.15);
+  --border-color-light: rgb(255, 255, 255, 0.1);
+  --transition-speed: 0.2s;
+}
+
+/*2. GRUNDLÄGGANDE STILAR (BODY, TYPOGRAFI)*/
+
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100vh;
   margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "Roboto", sans-serif;
-  background-color: #331a1a;
-  color: white;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient */
+  background-image: linear-gradient(to bottom right, #331a1a, #402a2a);
+  color: var(--primary-text-color);
   line-height: 1.6;
   font-size: 1rem;
+}
+
+main {
+  flex: 1;
 }
 
 h1 {
@@ -20,4 +45,120 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
+}
+
+/*3. GEMENSAMMA KOMPONENTSTILAR*/
+
+/* Gemensam stil för logotypen i header och footer */
+.logo-container img {
+  display: block;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 16px var(--shadow-dark);
+}
+
+/* Gemensamma stilar för all navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+nav a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  position: relative;
+  display: inline-block;
+}
+
+/* Gemensam hover-effekt för alla nav-länkar */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-text-color);
+  bottom: 0;
+  left: 0;
+  /* 
+  Börjar på 0% (dold)
+  https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scaleX */
+  transform: scaleX(0);
+  transform-origin: left;
+  box-shadow: 0 0px 16px rgb(0, 0, 0);
+  transition: transform var(--transition-speed) ease-out;
+}
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:hover */
+nav a:hover::after {
+  /* slutar här */
+  transform: scaleX(1);
+}
+
+/*4. SPECIFIKA KOMPONENTSTILAR*/
+
+/* ----- Header ----- */
+header {
+  background-color: var(--primary-bg-color);
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  box-shadow: 0 5px 10px var(--shadow-light);
+}
+
+header nav {
+  margin-left: auto; /* Flyttar nav till höger */
+}
+
+header nav ul {
+  gap: 1rem; /* Lite mer space i headern */
+}
+
+header nav a {
+  padding: 1rem; /* Större klickyta i headern */
+}
+
+header nav a::after {
+  bottom: 0.5rem; /* Justerar linjens position pga padding */
+  transform-origin: center; /* Centrerad animation i headern */
+}
+
+/* ----- Footer ----- */
+footer {
+  background-color: var(--primary-bg-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: 0 -5px 10px var(--shadow-light);
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%; /* Tar hela bredden för att kunna centrera .footer-bottom */
+}
+
+footer nav ul {
+  flex-direction: column; /* Staplar länkar vertikalt */
+  gap: 0.25rem;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid var(--border-color-light);
+  padding-top: 1rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255, 0.7);
 }
