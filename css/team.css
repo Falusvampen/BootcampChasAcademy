@@ -1,5 +1,10 @@
 .profiles {
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+  gap: 6em;
 }
 
 .profilecomp {
@@ -8,6 +13,8 @@
   flex-direction: column;
   max-width: 80%;
   width: 15.8em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .profileimg {
@@ -15,6 +22,7 @@
   border: solid black 2px;
   border-radius: 100%;
   align-self: center;
+  box-shadow: 0 0 16px rgb(0, 0, 0, 0.25);
 }
 
 .profilelink {
@@ -22,6 +30,7 @@
   font-size: 1.7em;
   color: white;
   margin-top: 0.5em;
+  text-shadow: 4px 4px 10px rgb(0, 0, 0, 1);
 }
 
 .profilelink:hover,
@@ -33,4 +42,5 @@
   margin: 0.25em 0 0;
   font-size: 1em;
   white-space: wrap;
+  text-shadow: 4px 4px 10px rgb(0, 0, 0, 1);
 }

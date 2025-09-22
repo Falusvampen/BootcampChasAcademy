@@ -1,4 +1,13 @@
+@media (max-width: 575px) {
+  .profilelink {
+    align-self: center;
+  }
+}
+
 @media (min-width: 576px) {
+  .profilelink {
+    align-self: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -8,6 +17,9 @@
 }
 
 @media (min-width: 1200px) {
+  .profilelink {
+    align-self: start;
+  }
 }
 
 @media (min-width: 1400px) {
