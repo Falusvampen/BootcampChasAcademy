@@ -2,11 +2,11 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background-position: 0% 53%;
+  background-position: 0% 51.5%;
 }
 
 .hero_text {
-  width: 22em;
+  width: 24em;
   font-size: 1.2em;
   text-shadow: 4px 4px 10px rgb(0, 0, 0, 1);
 }
