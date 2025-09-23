@@ -1,29 +1,29 @@
 @media (max-width: 575px) {
-  .team_qa_hero {
+  .hero {
     height: 8em;
     background-size: unset;
   }
 
-  .team_qa_heading {
+  h1 {
     margin: auto;
   }
 }
 
 
 @media (min-width: 576px) {
-  .team_qa_hero {
+  .hero {
     height: 8em;
     background-size: unset;
   }
 
-  .team_qa_heading {
+  h1 {
     margin: auto;
   }
 }
 
 
 @media (min-width: 768px) {
-  .team_qa_hero {
+  .hero {
     height: 12em;
     background-size: cover;
   }
@@ -31,7 +31,7 @@
 
 
 @media (min-width: 992px) {
-  .team_qa_heading {
+  h1 {
     margin: 0 0 0 5em;
   }
 }
