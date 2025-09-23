@@ -2,17 +2,29 @@
   .profileheading {
     align-self: center;
   }
+
+  .profiles {
+    margin: 0 0 5em;
+  }
 }
 
 @media (min-width: 576px) {
   .profileheading {
     align-self: center;
   }
+
+  .profiles {
+    margin: 0 0 5em;
+  }
 }
 
 @media (min-width: 768px) {
   .profileheading {
     align-self: start;
+  }
+
+  .profiles {
+    margin: 0 2em 5em 2em;
   }
 }
 
@@ -21,12 +33,12 @@
 
 @media (min-width: 1200px) {
   .profiles {
-    margin: 0 15em 5em 15em;
+    margin: 0 10em 5em 10em;
   }
 }
 
 @media (min-width: 1400px) {
   .profiles {
-    margin: 0 0 5em 0;
+    margin: 5em 0 10em 0;
   }
 }
