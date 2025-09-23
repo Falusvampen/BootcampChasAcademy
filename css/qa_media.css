@@ -1,0 +1,35 @@
+@media (max-width: 575px) {
+  .qa-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 576px) {
+  .qa-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .qa-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {
+  .qa-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .qa-container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1400px) {
+  .qa-container {
+    flex-direction: row;
+  }
+}
