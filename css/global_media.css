@@ -12,9 +12,10 @@
 
 @media (min-width: 576px) {
   .hero {
-    height: 12em;
+    height: 14em;
     background-size: unset;
   }
+	
   h1 {
     margin: 0 auto;
     text-align: center;

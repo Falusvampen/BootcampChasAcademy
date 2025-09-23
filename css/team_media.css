@@ -1,44 +1,63 @@
 @media (max-width: 575px) {
+  .profiles {
+    margin: -1em 0 4em 0;
+    gap: 4em;
+  }
+
+  .profilecomp {
+    height: unset;
+  }
+
   .profileheading {
     align-self: center;
   }
 
-  .profiles {
-    margin: 0 0 5em;
+  .profiletext {
+    text-align: center;
+    margin-top: 0.6em;
   }
 }
 
 @media (min-width: 576px) {
+  .profiles {
+    margin: 0 0 5em 0;
+  }
+
+  .profilecomp {
+    height: unset;
+  }
+
   .profileheading {
     align-self: center;
   }
 
-  .profiles {
-    margin: 0 0 5em;
+  .profiletext {
+    text-align: center;
+    margin-top: 0.6em;
   }
 }
 
 @media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
   .profileheading {
     align-self: start;
   }
 
-  .profiles {
-    margin: 0 2em 5em 2em;
+  .profiletext {
+    text-align: start;
   }
 }
 
-@media (min-width: 992px) {
-}
-
 @media (min-width: 1200px) {
-  .profiles {
-    margin: 0 10em 5em 10em;
+  .profilecomp {
+    height: 430px;
   }
 }
 
 @media (min-width: 1400px) {
   .profiles {
-    margin: 5em 0 10em 0;
+    margin: 4em 0 9em 0;
   }
 }
