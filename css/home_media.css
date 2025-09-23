@@ -29,11 +29,11 @@
 @media (min-width: 992px) {
   #hero_home {
     gap: 0.5em;
-    height: 27em;
+    height: 29em;
   }
 
   .hero_text {
-    margin: 0 0 0 12%;
+    margin: 0 0 0 11%;
     text-align: unset;
   }
 }
