@@ -32,4 +32,8 @@
   .qa-container {
     flex-direction: row;
   }
+
+  .card {
+    max-width: 700px;
+  }
 }
