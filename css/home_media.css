@@ -1,21 +1,23 @@
 @media (max-width: 575px) {
-  .hero {
-    height: 10em;
-    background-size: unset;
+  #hero_home {
+    gap: 0.7em;
+    height: 18em;
   }
-  h1 {
-    font-size: 2.6rem;
+
+  .hero_text {
+    font-size: 0.9em;
     margin: 0 auto;
     text-align: center;
   }
 }
 
 @media (min-width: 576px) {
-  .hero {
-    height: 12em;
-    background-size: unset;
+  #hero_home {
+    gap: 0.7em;
+    height: 22em;
   }
-  h1 {
+
+  .hero_text {
     margin: 0 auto;
     text-align: center;
   }
@@ -25,13 +27,14 @@
 }
 
 @media (min-width: 992px) {
-  h1 {
-    margin: 0 0 0 12%;
+  #hero_home {
+    gap: 0.5em;
+    height: 27em;
   }
 
-  .hero {
-    height: 18em;
-    background-size: cover;
+  .hero_text {
+    margin: 0 0 0 12%;
+    text-align: unset;
   }
 }
 
