@@ -36,7 +36,6 @@ Köra projektet lokalt:
 
 Detta projekt skapades av:
 
-- [Peter](https://github.com/peterbrockman)
 - [Siri](https://github.com/siriprydz)
 - [Fabian](https://github.com/fabian144)
 - [Axel](https://github.com/Falusvampen)
