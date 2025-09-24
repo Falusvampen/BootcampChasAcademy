@@ -1,16 +1,13 @@
-@media (max-width: 550px) {
+@media (max-width: 575px) {
+  .hero_fabian {
+    height: 10em;
+    background-size: unset;
+  }
+
   .all {
     width: 95%;
     padding: 0em;
     margin: 0.5em;
-  }
-
-  .top {
-    height: 5em;
-  }
-
-  h1 {
-    font-size: 1.2em;
   }
 
   .paragrafer {
@@ -45,15 +42,16 @@
   }
 }
 
-@media (min-width: 551px) {
+@media (min-width: 576px) {
+  .hero_fabian {
+    height: 14em;
+    background-size: unset;
+  }
+
   .all {
     width: 95%;
     padding: 0em;
     margin: 1.5em;
-  }
-
-  h1 {
-    font-size: 1.9em;
   }
 
   .paragrafer {
@@ -91,16 +89,12 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   .all {
     border: solid 0.2em black;
     width: 95%;
     padding: 0em;
     margin: 2em;
-  }
-
-  h1 {
-    font-size: 1.9em;
   }
 
   .paragrafer {
@@ -133,28 +127,12 @@
   }
 }
 
-@media (max-width: 1020px) {
-  .buttonleft,
-  .buttonright {
-    display: none;
+@media (min-width: 992px) {
+  .hero_fabian {
+    height: 19em;
+    background-size: cover;
   }
 
-  .bild.inactive {
-    opacity: 1;
-    display: block;
-  }
-
-	.bild2 {
-		opacity: 1;
-		display: block;
-	}
-
-	  .bilder {
-    justify-content: center;
-  }
-}
-
-@media (min-width: 1200px) {
   .buttonleft,
   .buttonright {
     display: block;
@@ -167,13 +145,30 @@
   }
 }
 
-@media (min-width: 1360px) {
-  .bilder {
-    width: 48%;
+@media (max-width: 1020px) {
+  .buttonleft,
+  .buttonright {
+    display: none;
   }
 
-  h1 {
-    font-size: 2.1em;
+  .bild.inactive {
+    opacity: 1;
+    display: block;
+  }
+
+  .bild2 {
+    opacity: 1;
+    display: block;
+  }
+
+  .bilder {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bilder {
+    width: 48%;
   }
 
   p {
@@ -181,26 +176,12 @@
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1400px) {
   .all {
     width: 100em;
   }
 
   .bilder {
     width: 45%;
-  }
-}
-
-@media (min-width: 1690px) {
-  .all {
-    width: 110em;
-  }
-
-  p {
-    font-size: 1.65em;
-  }
-
-  .bilder {
-    width: 42%;
   }
 }

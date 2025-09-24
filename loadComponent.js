@@ -54,10 +54,10 @@ function initializeHeaderMenu() {
 
 document.addEventListener("DOMContentLoaded", function () {
   loadComponent(
-    "./components/header.html",
+    "../components/header.html",
     "header-placeholder",
     initializeHeaderMenu
   );
 
-  loadComponent("./components/footer.html", "footer-placeholder");
+  loadComponent("../components/footer.html", "footer-placeholder");
 });
