@@ -2,34 +2,38 @@
   box-sizing: border-box;
 }
 
+.main_fabian {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
 .hero_fabian {
   display: flex;
   align-items: center;
   background-image: url("../images/Computer\ \(hero\).png");
   background-position: 0% 56%;
-  margin: 0 0 5em 0;
   box-shadow: 0 0 16px var(--shadow-medium);
 }
 
 .all {
-  background-image: linear-gradient(to bottom right, #331a1a, #402a2a);
+  background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
+  box-shadow: 0 0 16px var(--shadow-light);
   border-radius: 25px;
-  border: solid 0.1em black;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 4.2em;
-  margin: 2em;
+  justify-self: center;
+  align-self: center;
   height: fit-content;
-  width: 100em;
+  max-width: 95%;
 }
 
 p {
   font-size: 1.5em;
   color: rgb(235, 235, 235);
-  font-family: "Times New Roman", Times, serif;
+  text-shadow: 4px 4px 8px var(--shadow-dark);
 }
 
 p:first-child {
@@ -58,7 +62,7 @@ p:last-child {
   transition: opacity 500ms;
   max-width: 100%;
   border-radius: 15px;
-  border: solid black 5px;
+  box-shadow: 0 0 17px var(--shadow-medium);
 }
 
 .bild.inactive {
@@ -70,9 +74,9 @@ p:last-child {
   transition: opacity 500ms;
   max-width: 100%;
   border-radius: 15px;
-  border: solid black 5px;
   opacity: 0;
   display: none;
+	box-shadow: 0 0 17px var(--shadow-medium);
 }
 
 .bild2.active {
@@ -92,7 +96,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(88, 88, 88);
+  background-color: rgb(71, 71, 71);
 }
 
 button:active {
