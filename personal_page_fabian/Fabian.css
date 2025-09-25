@@ -12,7 +12,7 @@
 }
 
 .all {
-  background-color: rgb(34, 34, 34);
+  background-image: linear-gradient(to bottom right, #331a1a, #402a2a);
   border-radius: 25px;
   border: solid 0.1em black;
   display: flex;
