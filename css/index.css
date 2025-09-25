@@ -1,0 +1,27 @@
+.card {
+  max-width: 100%;
+  padding: 0px 20px 30px 30px;
+  margin: 30px;
+  background-color: #501d1d;
+  box-shadow: 0 0 16px var(--shadow-medium);
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  background: #260b0b;
+}
+
+.text-box {
+  padding: 20px 30px;
+  background: #501d1d;
+  position: relative;
+  border-radius: 6px;
+}
