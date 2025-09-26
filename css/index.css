@@ -4,8 +4,8 @@
 
 .timeline {
   position: relative;
-  max-width: 1200px;
-  margin: 120px auto 100px;
+  max-width: 1700px;
+  margin: 100px auto;
 }
 
 .container {
@@ -40,7 +40,7 @@
   left: 50%;
   margin-left: 0%;
   z-index: 0;
-  animationn: moveline 6s linear forwards;
+  /*animation: moveline 6s linear forwards;*/
 }
 
 @keyframes moveline {
@@ -52,40 +52,35 @@
   }
 }
 
-.left-container-line {
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: 20%;
-  background: #fff;
-  top: 0;
-  left: 100%;
-  margin-left: 0%;
-  margin-top: 10%;
-  transform: translateX(-50%); /* förankra mitten på mitten */
-  transform-origin: 40% 50%; /* pivotpunkten → lite till vänster om mitten */
-  z-index: 1; /*(-1) */
-  animationn: moveline 6s linear forwards;
-}
-
-.right-container-line {
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: 20%;
-  background: #fff;
-  top: 0;
-  right: 100%;
-  margin-left: 0%;
-  margin-top: 10%;
-  transform: translateX(50%); /* förankra mitten på mitten */
-  transform-origin: 40% 50%; /* pivotpunkten → lite till höger om mitten */
-  z-index: 1; /*(-1) */
-  animationn: moveline 6s linear;
-}
-
 #timeline-title {
-  position: relative;
   text-align: center;
-  z-index: 3;
+}
+
+.connector {
+  position: absolute;
+  top: 50%;
+  height: 3px;
+  width: 20%;
+  background: #fff;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.connector.left {
+  left: 100%;
+  transform: translate(-100%, -50%);
+}
+
+.connector.right {
+  right: 100%;
+  transform: translate(100%, -50%);
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: calc(100% - 40px);
+  }
 }

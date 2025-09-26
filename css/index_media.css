@@ -1,0 +1,42 @@
+@media (max-width: 800px) {
+  .timeline::after {
+    left: 5%;
+    transform: translateX(-50%);
+    height: calc(100% - 40px);
+  }
+
+  .container {
+    width: 50%;
+    left: 7% !important;
+    padding: 10px 24px;
+  }
+
+  .text-box {
+    width: 200%;
+  }
+
+  .connector.left {
+    left: 16%;
+    transform: translate(-100%, -50%);
+  }
+
+  .connector.right {
+    left: 16%;
+    transform: translate(-100%, -50%);
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
