@@ -1,9 +1,5 @@
-.card {
-  max-width: 100%;
-  padding: 0px 20px 30px 30px;
-  margin: 30px;
-  background-color: #501d1d;
-  box-shadow: 0 0 16px var(--shadow-medium);
+* {
+  box-sizing: border-box;
 }
 
 .timeline {
@@ -16,12 +12,42 @@
   padding: 10px 50px;
   position: relative;
   width: 50%;
-  background: #260b0b;
 }
 
 .text-box {
   padding: 20px 30px;
-  background: #501d1d;
+  /* background: #501d1d;*/
+  background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
   position: relative;
-  border-radius: 6px;
+  border-radius: 15px;
+}
+
+.left-container {
+  left: 0;
+}
+
+.right-container {
+  left: 50%;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: %;
+  z-index: -1; /*(-1) */
+  animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+  1% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
 }
