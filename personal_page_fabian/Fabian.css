@@ -31,9 +31,8 @@
 }
 
 p {
-  font-size: 1.5em;
   color: rgb(235, 235, 235);
-  text-shadow: 4px 4px 8px var(--shadow-dark);
+  text-shadow: 4px 4px 10px rgb(0, 0, 0, 1);
 }
 
 p:first-child {
@@ -76,7 +75,7 @@ p:last-child {
   border-radius: 15px;
   opacity: 0;
   display: none;
-	box-shadow: 0 0 17px var(--shadow-medium);
+  box-shadow: 0 0 17px var(--shadow-medium);
 }
 
 .bild2.active {
@@ -89,9 +88,9 @@ button {
   background-color: black;
   color: white;
   border: none;
-  border-radius: 10%;
-  width: 40px;
-  height: 40px;
+  border-radius: 20%;
+  width: 50px;
+  height: 50px;
   transition: outline 75ms, background-color 100ms;
 }
 
@@ -114,21 +113,19 @@ button:focus {
 
 .buttonright.inactive {
   opacity: 50%;
-  cursor: default;
 }
 
 .buttonleft {
   opacity: 50%;
   display: block;
+  cursor: pointer;
 }
 
 .buttonleft.active {
   opacity: 1;
-  cursor: pointer;
 }
 
 .arrows {
   display: inline-block;
-  font-size: 30px;
-  margin-bottom: 1.5em;
+  font-size: 25px;
 }

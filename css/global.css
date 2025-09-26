@@ -35,6 +35,9 @@ body {
 main {
   flex: 1;
 }
+p {
+  text-shadow: 4px 4px 10px rgb(0, 0, 0, 1);
+}
 
 h1 {
   font-size: 3.7rem;
@@ -43,10 +46,12 @@ h1 {
 
 h2 {
   font-size: 2rem;
+	text-shadow: 4px 4px 10px rgb(0, 0, 0, 1);
 }
 
 h3 {
   font-size: 1.75rem;
+	text-shadow: 4px 4px 10px rgb(0, 0, 0, 1);
 }
 
 .hero {
