@@ -9,7 +9,7 @@
     font-size: 2.25rem;
   }
 
-  .all {
+  .middle {
     width: 95%;
     padding: 0em;
     margin: 0.5em;
@@ -50,7 +50,7 @@
     margin-bottom: 1em;
   }
 
-  .all {
+  .middle {
     width: 95%;
     padding: 0em;
     margin: 1.5em;
@@ -88,7 +88,7 @@
     margin-bottom: -1em;
   }
 
-  .all {
+  .middle {
     margin: 4em 0em 4em;
   }
 
@@ -177,7 +177,7 @@
 }
 
 @media (min-width: 1400px) {
-  .all {
+  .middle {
     max-width: 110em;
   }
 

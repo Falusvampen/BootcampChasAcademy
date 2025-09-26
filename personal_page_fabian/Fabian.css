@@ -15,7 +15,7 @@
   box-shadow: 0 0 16px var(--shadow-medium);
 }
 
-.all {
+.middle {
   background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
   box-shadow: 0 0 16px var(--shadow-light);
   border-radius: 25px;
