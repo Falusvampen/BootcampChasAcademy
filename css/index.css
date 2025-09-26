@@ -5,7 +5,7 @@
 .timeline {
   position: relative;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 120px auto 100px;
 }
 
 .container {
@@ -16,11 +16,10 @@
 
 .text-box {
   padding: 20px 30px;
-  /* background: #501d1d;*/
   background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
   position: relative;
   border-radius: 15px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .left-container {
@@ -35,12 +34,12 @@
   content: "";
   position: absolute;
   width: 3px;
-  height: 100%;
+  height: calc(100% - 40px);
   background: #fff;
   top: 0;
   left: 50%;
   margin-left: 0%;
-  z-index: -1;
+  z-index: 0;
   animationn: moveline 6s linear forwards;
 }
 
@@ -65,7 +64,7 @@
   margin-top: 10%;
   transform: translateX(-50%); /* förankra mitten på mitten */
   transform-origin: 40% 50%; /* pivotpunkten → lite till vänster om mitten */
-  z-index: -1; /*(-1) */
+  z-index: 1; /*(-1) */
   animationn: moveline 6s linear forwards;
 }
 
@@ -81,7 +80,12 @@
   margin-top: 10%;
   transform: translateX(50%); /* förankra mitten på mitten */
   transform-origin: 40% 50%; /* pivotpunkten → lite till höger om mitten */
-  z-index: -1; /*(-1) */
-  animationn: moveline 6s linear forwards;
+  z-index: 1; /*(-1) */
+  animationn: moveline 6s linear;
 }
 
+#timeline-title {
+  position: relative;
+  text-align: center;
+  z-index: 3;
+}
