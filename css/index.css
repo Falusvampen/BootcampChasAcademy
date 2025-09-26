@@ -20,6 +20,7 @@
   background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
   position: relative;
   border-radius: 15px;
+  z-index: 1;
 }
 
 .left-container {
@@ -38,9 +39,9 @@
   background: #fff;
   top: 0;
   left: 50%;
-  margin-left: %;
-  z-index: -1; /*(-1) */
-  animation: moveline 6s linear forwards;
+  margin-left: 0%;
+  z-index: -1;
+  animationn: moveline 6s linear forwards;
 }
 
 @keyframes moveline {
@@ -51,3 +52,36 @@
     height: 100%;
   }
 }
+
+.left-container-line {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 20%;
+  background: #fff;
+  top: 0;
+  left: 100%;
+  margin-left: 0%;
+  margin-top: 10%;
+  transform: translateX(-50%); /* förankra mitten på mitten */
+  transform-origin: 40% 50%; /* pivotpunkten → lite till vänster om mitten */
+  z-index: -1; /*(-1) */
+  animationn: moveline 6s linear forwards;
+}
+
+.right-container-line {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 20%;
+  background: #fff;
+  top: 0;
+  right: 100%;
+  margin-left: 0%;
+  margin-top: 10%;
+  transform: translateX(50%); /* förankra mitten på mitten */
+  transform-origin: 40% 50%; /* pivotpunkten → lite till höger om mitten */
+  z-index: -1; /*(-1) */
+  animationn: moveline 6s linear forwards;
+}
+
