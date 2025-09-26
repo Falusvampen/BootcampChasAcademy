@@ -55,7 +55,7 @@ function loadAllComponents() {
       return;
     }
 
-    const componentUrl = `../components/${componentName}.html`;
+    const componentUrl = `components/${componentName}.html`;
     let callback = null;
 
     if (componentName === "header") {
