@@ -54,10 +54,10 @@ function initializeHeaderMenu() {
 
 document.addEventListener("DOMContentLoaded", function () {
   loadComponent(
-    "/BootcampChasAcademy/components/header.html",
+    "components/header.html",
     "header-placeholder",
     initializeHeaderMenu
   );
 
-  loadComponent("/BootcampChasAcademy/components/footer.html", "footer-placeholder");
+  loadComponent("components/footer.html", "footer-placeholder");
 });
