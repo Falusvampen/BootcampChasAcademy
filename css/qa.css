@@ -7,8 +7,10 @@
   max-width: 100%;
   padding: 0px 20px 30px 30px;
   margin: 30px;
-  background-color: #501d1d;
+  background-image: var(--seamless-gradient);
   box-shadow: 0 0 16px var(--shadow-medium);
+  background-attachment: fixed;
+  border-radius: 15px;
 }
 
 .qa-container {

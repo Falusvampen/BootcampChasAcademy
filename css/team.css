@@ -11,7 +11,6 @@
   justify-self: center;
   flex-wrap: wrap;
   gap: 4em;
-  max-width: 95%;
 }
 
 .profilecomp {
@@ -24,7 +23,8 @@
   padding: 2em 1.5em;
   border-radius: 15px;
   box-shadow: 0 0 16px var(--shadow-medium);
-  background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
+  background-image: var(--seamless-gradient);
+  background-attachment: fixed;
 }
 
 .profileimg {
