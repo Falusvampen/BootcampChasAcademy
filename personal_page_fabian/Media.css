@@ -6,7 +6,7 @@
   }
 
   #heading_fabian {
-    font-size: 2.25rem;
+    font-size: 2.1rem;
   }
 
   .middle {
@@ -21,7 +21,7 @@
   }
 
   p {
-    font-size: 1em;
+    font-size: 0.7em;
   }
 
   .bilder {
@@ -62,7 +62,7 @@
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .bilder {
@@ -98,7 +98,7 @@
   }
 
   p {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .bilder {
@@ -169,10 +169,6 @@
 
   .bilderna {
     max-width: 85%;
-  }
-
-  p {
-    font-size: 1.4em;
   }
 }
 
