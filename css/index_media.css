@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .timeline::after {
     left: 5%;
     transform: translateX(-50%);
@@ -24,12 +24,10 @@
     left: 16%;
     transform: translate(-100%, -50%);
   }
-}
 
-@media (min-width: 576px) {
-}
-
-@media (min-width: 768px) {
+  #timeline-title {
+    text-align: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -39,4 +37,12 @@
 }
 
 @media (min-width: 1400px) {
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline > .container {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
