@@ -4,6 +4,10 @@
   margin-bottom: 3rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border-color-light);
+  max-height: 27em;
+  overflow: scroll;
+  box-shadow: inset 0 0 15px var(--shadow-dark);
+  border-radius: 10px;
 }
 
 #commit-list-container {
