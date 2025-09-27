@@ -12,25 +12,28 @@
   </head>
 
   <body>
-    <div id="header-placeholder"></div>
+    <div id="header-container" data-component="header"></div>
+
     <main>
-      <section
-        id="hero_home"
-        class="hero"
-        role="banner"
-        aria-label="Orange to purple gradient over a laptop"
-      >
-        <h1>Om projektet</h1>
-        <p class="hero_text">
-          I det här projektet har vi utforskat vad det innebär att arbeta som
-          frontendutvecklare. Genom en intervju med en yrkesverksam utvecklare
-          har vi fått insikter om arbetsuppgifter, verktyg och processer inom
-          frontend och UX.
-        </p>
-      </section>
+      <div class="main-content-wrapper">
+        <section
+          id="hero_home"
+          class="hero"
+          role="banner"
+          aria-label="Orange to purple gradient over a laptop"
+        >
+          <h1>Om projektet</h1>
+          <p class="hero_text">
+            I det här projektet har vi utforskat vad det innebär att arbeta som
+            frontendutvecklare. Genom en intervju med en yrkesverksam utvecklare
+            har vi fått insikter om arbetsuppgifter, verktyg och processer inom
+            frontend och UX.
+          </p>
+        </section>
+      </div>
     </main>
 
-    <div id="footer-placeholder"></div>
-    <script src="scripts/loadComponent.js"></script>
+    <div id="footer-container" data-component="footer"></div>
+    <script type="module" src="scripts/loadComponent.js"></script>
   </body>
 </html>

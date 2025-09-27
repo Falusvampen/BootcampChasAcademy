@@ -1,0 +1,51 @@
+<template id="commit-item-templates">
+  <div class="commit-item" data-template="with-body">
+    <p class="commit-message">
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-commit-link
+        data-commit-title
+      ></a>
+    </p>
+
+    <details class="commit-expand">
+      <summary class="commit-details-summary">
+        <p class="commit-details">
+          av <strong data-commit-author></strong> den
+          <span data-commit-date></span>
+        </p>
+      </summary>
+      <div class="commit-body">
+        <p data-commit-body></p>
+      </div>
+    </details>
+  </div>
+
+  <div class="commit-item" data-template="simple">
+    <p class="commit-message is-static">
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-commit-link
+        data-commit-title
+      ></a>
+    </p>
+    <p class="commit-details">
+      av <strong data-commit-author></strong> den
+      <span data-commit-date></span>
+    </p>
+  </div>
+</template>
+
+<section class="commit-history-section">
+  <h2>Senaste aktivitet på GitHub</h2>
+  <div id="commit-list-container">
+    <div id="commit-list-header"></div>
+    <div id="commit-list">
+      <p class="loading-message">Laddar commits...</p>
+    </div>
+  </div>
+</section>

@@ -12,68 +12,70 @@
   </head>
 
   <body>
-    <div id="header-placeholder"></div>
+    <div id="header-container" data-component="header"></div>
     <main class="team_main">
-      <section
-        class="hero"
-        role="banner"
-        aria-label="Orange to purple gradient over a laptop"
-      >
-        <h1>The team</h1>
-      </section>
+      <div class="main-content-wrapper">
+        <section
+          class="hero"
+          role="banner"
+          aria-label="Orange to purple gradient over a laptop"
+        >
+          <h1>The team</h1>
+        </section>
 
-      <section class="profiles">
-        <figure class="profilecomp siri">
-          <img
-            class="profileimg"
-            src="images/Siri.png"
-            alt="En brunhårig tjej ler mot kameran"
-          />
-          <h2 class="profileheading">
-            <a class="profilelink" href="">Siri</a>
-          </h2>
-          <figcaption class="profiletext">
-            Grafisk designer som vill bredda sig inom webb. Gillar alla möjliga
-            kreativa grejer och hoppas att programmering kan bli mitt nästa
-            kreativa utlopp.
-          </figcaption>
-        </figure>
+        <section class="profiles">
+          <figure class="profilecomp siri">
+            <img
+              class="profileimg"
+              src="images/Siri.png"
+              alt="En brunhårig tjej ler mot kameran"
+            />
+            <h2 class="profileheading">
+              <a class="profilelink" href="">Siri</a>
+            </h2>
+            <figcaption class="profiletext">
+              Grafisk designer som vill bredda sig inom webb. Gillar alla
+              möjliga kreativa grejer och hoppas att programmering kan bli mitt
+              nästa kreativa utlopp.
+            </figcaption>
+          </figure>
 
-        <figure class="profilecomp axel">
-          <img
-            class="profileimg"
-            src="images/Axel.jpeg"
-            alt="En kille med glasögon och ryggsäck står framför en bergskedja"
-          />
-          <h2 class="profileheading">
-            <a class="profilelink" href="individuell/axel.html">Axel</a>
-          </h2>
-          <figcaption class="profiletext">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since
-          </figcaption>
-        </figure>
+          <figure class="profilecomp axel">
+            <img
+              class="profileimg"
+              src="images/Axel.jpeg"
+              alt="En kille med glasögon och ryggsäck står framför en bergskedja"
+            />
+            <h2 class="profileheading">
+              <a class="profilelink" href="individuell/axel.html">Axel</a>
+            </h2>
+            <figcaption class="profiletext">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since
+            </figcaption>
+          </figure>
 
-        <figure class="profilecomp fabian">
-          <img
-            class="profileimg"
-            src="images/Fabian.jpg"
-            alt="En kille med blå luvtröja står framför en å"
-          />
-          <h2 class="profileheading">
-            <a class="profilelink" href="personal_page_fabian/Fabian.html">Fabian</a>
-          </h2>
-          <figcaption class="profiletext">
-            Nyfiken och lösningsorienterad. Har byggt en del av sidan som du är
-            på just nu och förhoppningsvis många fler i framtiden :)
-          </figcaption>
-        </figure>
-      </section>
+          <figure class="profilecomp fabian">
+            <img
+              class="profileimg"
+              src="images/Fabian.jpg"
+              alt="En kille med blå luvtröja står framför en å"
+            />
+            <h2 class="profileheading">
+              <a class="profilelink" href="personal_page_fabian/Fabian.html">Fabian</a>
+            </h2>
+            <figcaption class="profiletext">
+              Nyfiken och lösningsorienterad. Har byggt en del av sidan som du
+              är på just nu och förhoppningsvis många fler i framtiden :)
+            </figcaption>
+          </figure>
+        </section>
+      </div>
     </main>
 
-    <div id="footer-placeholder"></div>
+    <div id="footer-container" data-component="footer"></div>
 
-    <script src="scripts/loadComponent.js"></script>
+    <script type="module" src="scripts/loadComponent.js"></script>
   </body>
 </html>
