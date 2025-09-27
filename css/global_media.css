@@ -1,8 +1,13 @@
 @media (max-width: 575px) {
+  .main-content-wrapper {
+    display: block;
+  }
+
   .hero {
     height: 10em;
     background-size: unset;
   }
+
   h1 {
     font-size: 2.6rem;
     margin: 0 auto;
