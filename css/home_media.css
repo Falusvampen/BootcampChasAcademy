@@ -5,8 +5,9 @@
   }
 
   .hero_text {
-    width: 23em;
-    font-size: 0.8em;
+    width: 24em;
+		max-width: 92%;
+    font-size: 0.9em;
     margin: 0 auto;
     text-align: center;
   }
