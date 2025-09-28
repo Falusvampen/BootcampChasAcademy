@@ -112,11 +112,6 @@
     justify-content: center;
     max-width: 85%;
   }
-
-  .bild2 {
-    display: none;
-    max-width: 100%;
-  }
 }
 
 @media (min-width: 992px) {
@@ -125,14 +120,7 @@
     background-size: cover;
   }
 
-  .buttonleft,
-  .buttonright {
-    display: block;
-  }
-
   .bilder {
-    margin-top: 2em;
-    justify-content: space-between;
     width: 75%;
   }
 

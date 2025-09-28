@@ -11,7 +11,6 @@ function buttonright() {
     bild2.classList.toggle("active");
     left.classList.toggle("active");
     right.classList.toggle("inactive");
-    click = 1;
   }
 }
 
@@ -23,6 +22,5 @@ function buttonleft() {
     bild2.classList.toggle("active");
     left.classList.toggle("active");
     right.classList.toggle("inactive");
-    click = 0;
   }
 }
