@@ -16,9 +16,9 @@
 }
 
 .middle {
-  background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
-  box-shadow: 0 0 16px var(--shadow-light);
-  border-radius: 25px;
+  background-image: var(--seamless-gradient);
+  box-shadow: inset 0 0 16px var(--shadow-dark);
+  border-radius: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -83,27 +83,19 @@ p:last-child {
   display: block;
 }
 
-button {
+.buttons {
   outline: solid rgba(255, 255, 255, 0) 1.5px;
-	box-shadow: 0 0 10px 0 var(--shadow-light);
-  background-color: black;
+	box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1), 0 2px 4px var(--shadow-medium);
+  background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
   color: white;
   border: none;
   border-radius: 20%;
   width: 50px;
   height: 50px;
-  transition: outline 75ms, background-color 100ms;
+  transition: outline 75ms;
 }
 
-button:hover {
-  background-color: rgb(71, 71, 71);
-}
-
-button:active {
-  background-color: rgb(70, 70, 70);
-}
-
-button:focus {
+.buttons:focus {
   outline: solid white 1.5px;
 }
 
@@ -129,4 +121,11 @@ button:focus {
 .arrows {
   display: inline-block;
   font-size: 25px;
+}
+
+#commits_fabian {
+  max-height: 27em;
+  overflow: scroll;
+  box-shadow: inset 0 0 15px var(--shadow-dark);
+  border-radius: 10px;
 }
