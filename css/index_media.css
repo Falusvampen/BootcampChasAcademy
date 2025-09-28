@@ -1,48 +1,83 @@
-@media (max-width: 768px) {
+@media (max-width: 575px) {
+  .timeline {
+    --line-x: 20px;
+    --connector-l: 28px;
+  }
+}
+
+@media (min-width: 576px) {
+  .timeline {
+    --line-x: 28px;
+    --connector-l: 40px;
+  }
+}
+
+@media (min-width: 768px) {
   .timeline::after {
-    left: 5%;
+    left: 50%;
     transform: translateX(-50%);
-    height: calc(100% - 40px);
   }
 
-  .container {
+  .timeline > .container {
     width: 50%;
-    left: 7% !important;
-    padding: 10px 24px;
+    padding: 10px 50px;
+  }
+  .left-container {
+    left: 0;
+  }
+  .right-container {
+    left: 50%;
   }
 
-  .text-box {
-    width: 200%;
+  .connector {
+    width: 20%;
+    left: auto;
   }
-
   .connector.left {
-    left: 16%;
+    left: 100%;
     transform: translate(-100%, -50%);
   }
-
   .connector.right {
-    left: 16%;
-    transform: translate(-100%, -50%);
-  }
-
-  #timeline-title {
-    text-align: center;
+    right: 100%;
+    transform: translate(100%, -50%);
   }
 }
 
 @media (min-width: 992px) {
+  .timeline > .container {
+    padding: 12px 64px;
+  }
+  .connector {
+    width: 22%;
+  }
 }
 
 @media (min-width: 1200px) {
+  .timeline {
+    max-width: 1200px;
+  }
+  .connector {
+    width: 24%;
+  }
 }
 
 @media (min-width: 1400px) {
+  .timeline {
+    max-width: 1400px;
+  }
+  .connector {
+    width: 26%;
+  }
 }
 
+/* Tillgänglighet */
 @media (prefers-reduced-motion: reduce) {
   .timeline > .container {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+  .timeline::after {
+    animation: none;
   }
 }
