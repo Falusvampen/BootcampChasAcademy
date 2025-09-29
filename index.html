@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hem</title>
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/global_media.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/home_media.css" />
-    <script src="scripts/setBasePath.js"></script>
-  </head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Hem</title>
+	<link rel="stylesheet" href="css/global.css" />
+	<link rel="stylesheet" href="css/global_media.css" />
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/home_media.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/index_media.css">
+	<script src="scripts/setBasePath.js"></script>
 
-  <body>
+</head>
+
+<body>
     <div id="header-container" data-component="header"></div>
+	<main>
+  	
 
-    <main>
-      <div class="main-content-wrapper">
-        <section
-          id="hero_home"
-          class="hero"
-          role="banner"
-          aria-label="Orange to purple gradient over a laptop"
-        >
-          <h1>Om projektet</h1>
-          <p class="hero_text">
-            I det här projektet har vi utforskat vad det innebär att arbeta som
-            frontendutvecklare. Genom en intervju med en yrkesverksam utvecklare
-            har vi fått insikter om arbetsuppgifter, verktyg och processer inom
-            frontend och UX.
-          </p>
-        </section>
-      </div>
-    </main>
+		<section id="hero_home" class="hero" role="banner" aria-label="Orange to purple gradient over a laptop">
+			<h1>Om projektet</h1>
+			<p class="hero_text">I det här projektet har vi utforskat vad det innebär att arbeta som frontendutvecklare. Genom en intervju med
+				en yrkesverksam utvecklare har vi fått insikter om arbetsuppgifter, verktyg och processer inom frontend och UX.
+			</p>
+		</section>
+		
+		<h2 id="timeline-title">Tidslinje</h2>
+
+		<section class="timeline">
+			<div class="container left-container">
+    			<span class="connector left" aria-hidden="true"></span> 
+    			<div class="text-box">
+      				<h2>Uppstartsmöte</h2>
+      				<p>Vi hade vårt första möte där vi gick igenom förväntningar, ambitionsnivå och tillgänglighet. Vi satte en tidplan, bestämde program och kommunikationskanaler, startade ett gemensamt git-repo och fördelade actions inför nästa möte.</p>
+   			    </div>
+            </div>
+			<div class="container right-container">
+    			<span class="connector right" aria-hidden="true"></span> 
+    			<div class="text-box">
+      				<h2>Wireframes och design</h2>
+      				<p>Först tog vi fram enkla wireframes för att skapa en gemensam bild. Därefter utvecklade vi en mer detaljerad design med färger och lösningar som fungerade som riktlinje under utvecklingen.</p>
+   			    </div>
+            </div>
+			<div class="container left-container">
+    			<span class="connector left" aria-hidden="true"></span> 
+    			<div class="text-box">
+      				<h2>Utveckling</h2>
+      				<p>Arbetet organiserades i Jira och vi och kom överens om att använda branch-namn baserade på features. Under utvecklingen hjälpte och stöttade vi varandra genom slackgruppen och digitala möten.</p>
+   			    </div>
+            </div>
+			<div class="container right-container">
+    			<span class="connector right" aria-hidden="true"></span> 
+    			<div class="text-box">
+      				<h2>intervju</h2>
+      				<p>Intervjun gav flera insikter och blev ett roligt avbrott i utvecklingsarbetet!</p>
+   			    </div>
+            </div>
+			<div class="container left-container">
+    			<span class="connector left" aria-hidden="true"></span> 
+    			<div class="text-box">
+      				<h2>Presentation</h2>
+      				<p>När webbplatsen, intervjun och våra individuella sidor var klara planerade vi presentationen. Här står vi nu och visar upp vårt resultat!</p>
+   			    </div>
+            </div>
+			
+      </section>
+
+	</main>
+</div>
 
     <div id="footer-container" data-component="footer"></div>
     <script type="module" src="scripts/loadComponent.js"></script>
-  </body>
+</body>
+
 </html>
