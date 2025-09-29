@@ -1,11 +1,12 @@
 @media (max-width: 575px) {
   .profiles {
-    margin: -1em 0 4em 0;
-    gap: 4em;
+    margin: -1em auto 2em auto;
+    gap: 2em;
   }
 
   .profilecomp {
     height: unset;
+		width: 17em;
   }
 
   .profileheading {
@@ -20,11 +21,12 @@
 
 @media (min-width: 576px) {
   .profiles {
-    margin: 0 0 5em 0;
+    margin: 0 0 4em 0;
   }
 
   .profilecomp {
     height: unset;
+		width: 19em;
   }
 
   .profileheading {
@@ -41,6 +43,10 @@
 }
 
 @media (min-width: 992px) {
+  .profilecomp {
+    width: 20em;
+  }
+
   .profileheading {
     align-self: start;
   }
@@ -58,6 +64,6 @@
 
 @media (min-width: 1400px) {
   .profiles {
-    margin: 4em 0 9em 0;
+    margin: 3em 0 8em 0;
   }
 }

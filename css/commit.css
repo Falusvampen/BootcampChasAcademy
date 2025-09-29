@@ -1,0 +1,132 @@
+.commit-history-section {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color-light);
+}
+
+#commit-list-container {
+  max-width: 500px;
+  margin: 2rem auto 0 auto;
+  text-align: left;
+}
+
+.commit-header-info {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color-light);
+  text-align: left;
+}
+
+.commit-header-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--primary-text-color);
+}
+
+.commit-header-info p {
+  margin: 0.5rem 0 0 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.loading-message,
+.error-message {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.error-message {
+  color: #ff8a8a;
+}
+
+.commit-item {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  transition: background-color var(--transition-speed);
+  border-left: 4px solid var(--primary-bg-color);
+}
+
+.commit-item:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.commit-message {
+  margin: 0;
+}
+
+.commit-message a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  overflow-wrap: break-word;
+}
+
+.commit-message a:hover {
+  text-decoration: underline;
+}
+
+.commit-details {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.commit-expand {
+  margin-top: 0.5rem;
+}
+
+.commit-details-summary {
+  cursor: pointer;
+  outline: none;
+  list-style: none;
+  display: inline-flex;
+  position: relative;
+  padding-left: 1.2rem;
+  transition: color 0.2s;
+}
+
+.commit-details-summary:hover .commit-details {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.commit-details-summary::-webkit-details-marker {
+  display: none;
+}
+
+.commit-details-summary:before {
+  content: "▶";
+  font-size: 0.7em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.commit-expand[open] > .commit-details-summary:before {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.commit-body {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color-light);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+.commit-body p {
+  margin: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  white-space: pre-wrap;
+}
+
+.commit-item > .commit-details {
+  margin-top: 0.5rem;
+}

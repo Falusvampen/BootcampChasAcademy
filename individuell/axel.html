@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Axel</title>
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/global_media.css" />
+
+    <link rel="stylesheet" href="../css/axel.css" />
+    <link rel="stylesheet" href="../css/commit.css" />
+    <script src="../scripts/setBasePath.js"></script>
+    <script src="../env.js"></script>
+  </head>
+
+  <body>
+    <div id="header-container" data-component="header"></div>
+
+    <main>
+      <div class="main-content-wrapper">
+        <section
+          class="hero"
+          role="banner"
+          aria-label="Orange to purple gradient over a laptop"
+        >
+          <h1>Axel</h1>
+        </section>
+
+        <section class="profile-details">
+          <div class="profile-content">
+            <div class="profile-image-container">
+              <img
+                src="images/Axel.webp"
+                alt="En kille med glasögon och ryggsäck står framför en bergskedja"
+              />
+            </div>
+            <div class="profile-text-container">
+              <h2>Om Axel</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                adipisci placeat at sapiente quisquam animi autem optio magni,
+                veniam totam officiis provident dolorem omnis veritatis,
+                laboriosam voluptates ducimus cupiditate quas?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                itaque numquam? Pariatur, a nam quisquam beatae tenetur, quos
+                molestiae aliquid aliquam ipsam temporibus natus quod quis
+                numquam dolores, quia modi!
+              </p>
+            </div>
+          </div>
+
+          <div class="skills-section">
+            <div class="skill-category">
+              <h3>Verktyg</h3>
+              <ul class="skills-list">
+                <li>Next</li>
+                <li>Nuxt</li>
+                <li>Angular</li>
+                <li>Relay</li>
+                <li>Jenkins</li>
+                <li>Docker</li>
+                <li>ECS</li>
+                <li>SonarCloud</li>
+                <li>Jest</li>
+                <li>Sanity</li>
+                <li>Spring Boot</li>
+                <li>Github Actions</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3>Språk</h3>
+              <ul class="skills-list">
+                <li>TypeScript</li>
+                <li>Java</li>
+                <li>Golang</li>
+                <li>Rust</li>
+                <li>Swift</li>
+                <li>Kotlin</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            id="commit-container"
+            data-component="commit-section"
+            data-repo-owner="Falusvampen"
+            data-repo-name="BootcampChasAcademy"
+            data-author="Falusvampen"
+          ></div>
+          <a href="team.html" class="back-link">← Back to the team</a>
+        </section>
+      </div>
+    </main>
+
+    <div id="footer-container" data-component="footer"></div>
+    <script type="module" src="scripts/loadComponent.js"></script>
+  </body>
+</html>
