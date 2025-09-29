@@ -57,14 +57,14 @@ p:last-child {
   max-width: 80%;
 }
 
-.bild {
+#commits_fabian {
   transition: opacity 500ms;
   max-width: 100%;
   border-radius: 15px;
   box-shadow: 0 0 17px var(--shadow-medium);
 }
 
-.bild.inactive {
+#commits_fabian.inactive {
   opacity: 0;
   display: none;
 }
