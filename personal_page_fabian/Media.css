@@ -11,11 +11,10 @@
 
   .middle {
     width: 95%;
-    padding: 0em;
     margin: 0.5em;
   }
 
-  .paragrafer {
+  .profile {
     padding: 2em 1em 1em;
     max-width: 90%;
   }
@@ -34,7 +33,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 90%;
   }
 
   #commits_fabian,
@@ -47,28 +45,15 @@
   .hero_fabian {
     height: 14em;
     background-size: unset;
-    margin-bottom: 1em;
   }
 
   .middle {
-    width: 95%;
-    padding: 0em;
+    max-width: 95%;
     margin: 1.5em;
-  }
-
-  .paragrafer {
-    padding: 2em 1em 1em;
-    max-width: 90%;
   }
 
   p {
     font-size: 1em;
-  }
-
-  .slides {
-    margin-top: 0em;
-    justify-content: center;
-    width: 90%;
   }
 
   .theslides {
@@ -84,33 +69,16 @@
 }
 
 @media (min-width: 768px) {
-  .hero_fabian {
-    margin-bottom: -1em;
-  }
-
   .middle {
-    margin: 4em 0em 4em;
-  }
-
-  .paragrafer {
-    padding: 4.5em 3.5em 1em;
-    max-width: 95%;
+    margin: 5em;
   }
 
   p {
     font-size: 1.2em;
   }
 
-  .slides {
-    margin-top: 2em;
-    justify-content: space-between;
-    width: 85%;
-  }
-
   .theslides {
-    display: flex;
-    justify-content: center;
-    max-width: 85%;
+    display: unset;
   }
 }
 
@@ -118,14 +86,6 @@
   .hero_fabian {
     height: 19em;
     background-size: cover;
-  }
-
-  .slides {
-    width: 75%;
-  }
-
-  .theslides {
-    max-width: 80%;
   }
 }
 
@@ -144,32 +104,13 @@
     opacity: 1;
     display: block;
   }
-
-  .slides {
-    justify-content: center;
-  }
 }
 
 @media (min-width: 1200px) {
-  .slides {
-    width: 70%;
-  }
-
-  .theslides {
-    max-width: 85%;
-  }
 }
 
 @media (min-width: 1400px) {
   .middle {
     max-width: 110em;
-  }
-
-  .slides {
-    width: 57%;
-  }
-
-  .theslides {
-    max-width: 83%;
   }
 }
