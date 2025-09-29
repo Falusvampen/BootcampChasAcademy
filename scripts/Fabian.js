@@ -1,26 +1,22 @@
 var right = document.querySelector(".buttonright");
 var left = document.querySelector(".buttonleft");
 var commits = document.querySelector("#commits_fabian");
-var bild2 = document.querySelector(".bild2");
+var bild = document.querySelector(".bild");
 
-right.addEventListener("click", buttonright);
-
-function buttonright() {
+right.addEventListener("click", () => {
   if (commits.classList.contains("inactive") == false) {
     commits.classList.toggle("inactive");
-    bild2.classList.toggle("active");
+    bild.classList.toggle("active");
     left.classList.toggle("active");
     right.classList.toggle("inactive");
   }
-}
+});
 
-left.addEventListener("click", buttonleft);
-
-function buttonleft() {
+left.addEventListener("click", () => {
   if (commits.classList.contains("inactive") == true) {
     commits.classList.toggle("inactive");
-    bild2.classList.toggle("active");
+    bild.classList.toggle("active");
     left.classList.toggle("active");
     right.classList.toggle("inactive");
   }
-}
+});

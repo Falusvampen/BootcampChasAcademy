@@ -43,7 +43,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
-.bilder {
+.slides {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -51,7 +51,7 @@ p:last-child {
   margin-bottom: 2em;
 }
 
-.bilderna {
+.theslides {
   display: flex;
   justify-content: center;
   max-width: 80%;
@@ -69,7 +69,7 @@ p:last-child {
   display: none;
 }
 
-.bild2 {
+.bild {
   transition: opacity 500ms;
   max-width: 100%;
   border-radius: 15px;
@@ -78,7 +78,7 @@ p:last-child {
   box-shadow: 0 0 17px var(--shadow-medium);
 }
 
-.bild2.active {
+.bild.active {
   opacity: 1;
   display: block;
 }

@@ -24,13 +24,13 @@
     font-size: 0.7em;
   }
 
-  .bilder {
+  .slides {
     margin-top: 0em;
     justify-content: center;
     width: 95%;
   }
 
-  .bilderna {
+  .theslides {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +38,7 @@
   }
 
   #commits_fabian,
-  .bild2 {
+  .bild {
     margin: 1em auto;
   }
 }
@@ -65,20 +65,20 @@
     font-size: 1em;
   }
 
-  .bilder {
+  .slides {
     margin-top: 0em;
     justify-content: center;
     width: 90%;
   }
 
-  .bilderna {
+  .theslides {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   #commits_fabian,
-  .bild2 {
+  .bild {
     margin: 2em auto;
   }
 }
@@ -101,13 +101,13 @@
     font-size: 1.2em;
   }
 
-  .bilder {
+  .slides {
     margin-top: 2em;
     justify-content: space-between;
     width: 85%;
   }
 
-  .bilderna {
+  .theslides {
     display: flex;
     justify-content: center;
     max-width: 85%;
@@ -120,11 +120,11 @@
     background-size: cover;
   }
 
-  .bilder {
+  .slides {
     width: 75%;
   }
 
-  .bilderna {
+  .theslides {
     max-width: 80%;
   }
 }
@@ -140,22 +140,22 @@
     display: block;
   }
 
-  .bild2 {
+  .bild {
     opacity: 1;
     display: block;
   }
 
-  .bilder {
+  .slides {
     justify-content: center;
   }
 }
 
 @media (min-width: 1200px) {
-  .bilder {
+  .slides {
     width: 70%;
   }
 
-  .bilderna {
+  .theslides {
     max-width: 85%;
   }
 }
@@ -165,11 +165,11 @@
     max-width: 110em;
   }
 
-  .bilder {
+  .slides {
     width: 57%;
   }
 
-  .bilderna {
+  .theslides {
     max-width: 83%;
   }
 }
