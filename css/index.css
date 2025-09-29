@@ -1,0 +1,103 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.timeline {
+  --line-x: 24px;
+  --connector-l: 40px; 
+  --gap: 0px; 
+  position: relative;
+  max-width: 1700px;
+  margin: 100px auto;
+}
+
+#timeline-title {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: var(--line-x);
+  width: 3px;
+  height: 100%;
+  background: #fff;
+  z-index: 0;
+  animation: moveline 1.2s ease-in forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.timeline > .container {
+  position: relative;
+  width: 100%;
+  padding: 10px 16px 10px calc(var(--line-x) + var(--connector-l) + var(--gap));
+  opacity: 0; 
+  animation: movedown 0.9s ease-out forwards;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline > .container:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.timeline > .container:nth-of-type(2) {
+  animation-delay: 0.15s;
+}
+.timeline > .container:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+.timeline > .container:nth-of-type(4) {
+  animation-delay: 0.45s;
+}
+.timeline > .container:nth-of-type(5) {
+  animation-delay: 0.6s;
+}
+.timeline > .container:nth-of-type(6) {
+  animation-delay: 0.75s;
+}
+
+.text-box {
+  position: relative;
+  border-radius: 15px;
+  padding: 20px 30px;
+  background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
+  z-index: 2; 
+}
+
+.connector {
+  position: absolute;
+  top: 50%;
+  left: var(--line-x);
+  width: var(--connector-l);
+  height: 3px;
+  background: #fff;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.connector.left,
+.connector.right {
+  display: block;
+}
