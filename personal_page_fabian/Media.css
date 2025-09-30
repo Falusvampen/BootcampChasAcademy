@@ -70,11 +70,11 @@
 
 @media (min-width: 768px) {
   .middle {
-    margin: 5em;
+    margin: 4em;
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .theslides {
@@ -110,6 +110,10 @@
 }
 
 @media (min-width: 1400px) {
+  p {
+    font-size: 1.1em;
+  }
+
   .middle {
     max-width: 110em;
   }
