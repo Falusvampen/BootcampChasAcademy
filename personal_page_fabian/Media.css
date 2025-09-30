@@ -12,6 +12,9 @@
   .middle {
     width: 95%;
     margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .profile {
@@ -25,19 +28,25 @@
 
   .slides {
     margin-top: 0em;
-    justify-content: center;
     width: 95%;
   }
 
   .theslides {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
+    max-width: 100%;
   }
 
-  #commits_fabian,
   .bild {
-    margin: 1em auto;
+    margin: 2em 0;
+  }
+
+  #commits_fabian {
+    align-self: center;
+    max-width: 80%;
+    border-radius: unset;
+    background: transparent;
   }
 }
 
@@ -53,7 +62,7 @@
   }
 
   p {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .theslides {
@@ -74,7 +83,7 @@
   }
 
   p {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   .theslides {
@@ -107,6 +116,9 @@
 }
 
 @media (min-width: 1200px) {
+  p {
+    font-size: 1em;
+  }
 }
 
 @media (min-width: 1400px) {
