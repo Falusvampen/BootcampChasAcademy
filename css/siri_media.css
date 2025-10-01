@@ -18,6 +18,10 @@
     max-width: 1700px;
     justify-content: center;
   }
+
+  .back-link {
+    text-align: center;
+  }
 }
 
 @media (min-width: 1400px) {
