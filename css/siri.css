@@ -1,5 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  padding: 30px;
+}
+
+.text-box {
+  border-radius: 15px;
+  padding: 20px 30px;
+  background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
+}
+
 .profileimg {
-  width: 90%;
+  max-width: 90%;
   border-radius: 100%;
   align-self: center;
   box-shadow: 0 0 16px rgb(0, 0, 0, 0.5);

@@ -1,28 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/global_media.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/home_media.css" />
-    <link rel="stylesheet" href="css/siri.css" />
-    <link rel="stylesheet" href="css/siri_media.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siris profile page</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/global_media.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/home_media.css" />
+    <link rel="stylesheet" href="../css/siri.css" />
+    <link rel="stylesheet" href="../css/siri_media.css" />
     <script src="scripts/setBasePath.js"></script>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div id="header-container" data-component="header"></div>
+
+    <main>
+      <div class="main-content-wrapper">
+        <section
+          class="hero"
+          role="banner"
+          aria-label="Orange to purple gradient over a laptop"
+        >
+          <h1>Siri</h1>
+        </section>
+      <section class="flex-container">
             <img
               class="profileimg"
-              src="images/Siri.webp"
+              src="../images/Siri.webp"
               alt="En brunhårig tjej ler mot kameran"
             />
-        
-      
-            <div id="footer-container" data-component="footer"></div>
+                
+            <div class="text-box">
+              <h2>Varför Frontend och UX?</h2>
+              <p>
+               Jag har jobbat som grafisk designer de senaste fyra åren och vill nu bredda och framtidssäkra min roll genom att lära mig frontendutveckling och UX. Jag har märkt att många arbetsgivare efterfrågar kunskap inom både UX och webbutveckling och vill därför lära mig mer om det! Min tanke är att bredda min roll snarare än att få en helt ny karriär.
+              </p>
+            </div>
+               <div class="text-box">
+              <h2>Min framtida yrkesroll</h2>
+              <p>Som digital designer med bakgrund inom grafisk design och nu utbildning i frontend och UX, ligger mitt fokus på utveckling av designsystem och att kunna vara en brygga mellan estetik och teknik. Jag gör UX-lösningar som gynnar användaren och samtidigt blir görbara och smarta ur ett utvecklarperspektiv. Jag vill gärna jobba inhouse på en marknadsavdelning på ett större företag eller en webbyrå/digitalbyrå.              </p>
+            </div>
+      </section>
 
+       <section class="flex-container">
+         <div
+            id="commit-container"
+            data-component="commit-section"
+            data-repo-owner="Falusvampen"
+            data-repo-name="BootcampChasAcademy"
+            data-author="Falusvampen"
+          ></div>
+          <a href="team.html" class="back-link">← Back to the team</a>
+       </section>
+
+     </div>
+    </main>
+
+    <div id="footer-container" data-component="footer"></div>
     <script type="module" src="scripts/loadComponent.js"></script>
-</body>
+  </body>
 </html>
+
+
