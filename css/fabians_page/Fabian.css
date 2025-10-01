@@ -1,7 +1,7 @@
 .hero_fabian {
   display: flex;
   align-items: center;
-  background-image: url("../images/Computer\ \(hero\).webp");
+  background-image: url("../../images/Computer\ \(hero\).webp");
   background-position: 0% 56%;
   box-shadow: 0 0 16px var(--shadow-medium);
 }
