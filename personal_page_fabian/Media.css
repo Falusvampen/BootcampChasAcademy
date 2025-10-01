@@ -1,0 +1,220 @@
+@media (max-width: 575px) {
+  .hero_fabian {
+    height: 10em;
+    background-size: unset;
+    margin-bottom: 1em;
+  }
+
+  #heading_fabian {
+    font-size: 2.1rem;
+  }
+
+  .middle {
+    width: 95%;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile {
+    padding: 2em 1em 1em;
+    max-width: 90%;
+  }
+
+  .profileimg {
+    width: 15em;
+    max-width: 65%;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .slides {
+    margin-top: 0em;
+    width: 95%;
+  }
+
+  .theslides {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .bild {
+    margin: 2em 0;
+    max-width: 100%;
+  }
+
+  #commits_fabian {
+    align-self: center;
+    max-width: 80%;
+    margin-bottom: 3%;
+  }
+}
+
+@media (min-width: 576px) {
+  .hero_fabian {
+    height: 14em;
+    background-size: unset;
+  }
+
+  .middle {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin-top: 2em;
+  }
+
+  .profile {
+    padding: 2em 1em 1em;
+    max-width: 90%;
+  }
+
+  .profileimg {
+    width: 15em;
+    max-width: 65%;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .slides {
+    margin-top: 0em;
+    width: 95%;
+  }
+
+  .theslides {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .bild {
+    margin: 2em 0;
+    max-width: 90%;
+  }
+
+  #commits_fabian {
+    align-self: center;
+    max-width: 80%;
+    margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .profileimg {
+    width: 17em;
+  }
+
+  p {
+    font-size: 1.05em;
+  }
+
+  #commits_fabian {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero_fabian {
+    height: 19em;
+    background-size: cover;
+  }
+
+  .profile {
+    max-width: 80%;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  .slides {
+    margin: 2em 0em 2em;
+    width: 80%;
+    max-width: 50em;
+  }
+
+  #commits_fabian {
+    padding: 0 3em;
+  }
+
+  .commit_history_fabian {
+    margin: -4em 0;
+  }
+
+  .bild {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .buttonleft,
+  .buttonright {
+    display: none;
+  }
+
+  #commits_fabian.inactive {
+    opacity: 1;
+    display: block;
+  }
+
+  .bild {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    margin: 2em;
+    width: fit-content;
+    min-height: 754px;
+    max-width: 105em;
+  }
+
+  .profile {
+    max-width: 90%;
+  }
+
+  .profileimg {
+    width: 15em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  .slides {
+    width: 100%;
+    max-width: 50em;
+  }
+
+  .theslides {
+    max-width: 75%;
+  }
+
+  #commits_fabian {
+    margin-bottom: 0;
+  }
+}

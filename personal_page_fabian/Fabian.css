@@ -1,0 +1,124 @@
+.hero_fabian {
+  display: flex;
+  align-items: center;
+  background-image: url("../images/Computer\ \(hero\).webp");
+  background-position: 0% 56%;
+  box-shadow: 0 0 16px var(--shadow-medium);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+#h2_fabian {
+  margin: 0;
+}
+
+.profileimg {
+  align-self: center;
+  width: 16em;
+  max-width: 50%;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 16px rgb(0, 0, 0, 0.5);
+}
+
+p {
+  color: rgb(235, 235, 235);
+  text-shadow: 4px 4px 10px rgb(0, 0, 0, 1);
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  justify-self: center;
+  width: 100%;
+}
+
+.theslides {
+  max-width: 70%;
+}
+
+.bild {
+  border-radius: 10px;
+  opacity: 0;
+  display: none;
+  box-shadow: 0 0 17px var(--shadow-medium);
+  max-width: 90%;
+}
+
+.bild.active {
+  opacity: 1;
+  display: block;
+}
+
+.buttons {
+  outline: solid rgba(255, 255, 255, 0) 1.5px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    0 2px 4px var(--shadow-medium);
+  background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
+  color: white;
+  border: none;
+  border-radius: 20%;
+  width: 50px;
+  height: 50px;
+  transition: outline 75ms;
+}
+
+.buttons:focus {
+  outline: solid white 1.5px;
+}
+
+.buttonright {
+  cursor: pointer;
+  display: block;
+}
+
+.buttonright.inactive {
+  opacity: 50%;
+}
+
+.buttonleft {
+  opacity: 50%;
+  display: block;
+  cursor: pointer;
+}
+
+.buttonleft.active {
+  opacity: 1;
+}
+
+.arrows {
+  display: inline-block;
+  font-size: 25px;
+}
+
+#commits_fabian {
+  background-image: linear-gradient(to bottom right, #331a1a, #402a2a);
+  max-height: 40em;
+  overflow: scroll;
+  box-shadow: inset 0 0 15px var(--shadow-dark);
+  border-radius: 10px;
+  padding: 0 2em;
+}
+
+#commits_fabian.inactive {
+  opacity: 0;
+  display: none;
+}
+
+.commit_history_fabian {
+  margin: -5em 0;
+}
