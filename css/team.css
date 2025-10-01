@@ -6,7 +6,7 @@
   justify-self: center;
   flex-wrap: wrap;
   gap: 4em;
-  max-width: 93%;
+	max-width: 93%;
 }
 
 .profilecomp {

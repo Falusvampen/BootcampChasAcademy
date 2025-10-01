@@ -28,7 +28,7 @@ body {
   flex-direction: column;
   font-family: "Roboto", sans-serif;
   background-image: var(--seamless-gradient);
-	background-attachment: fixed;
+  background-attachment: fixed;
   color: var(--primary-text-color);
   line-height: 1.6;
   font-size: 1rem;
@@ -169,7 +169,6 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-
 }
 
 .footer-top {

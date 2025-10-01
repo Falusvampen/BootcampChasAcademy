@@ -7,7 +7,7 @@
     height: 10em;
     background-size: unset;
   }
-	
+
   h1 {
     font-size: 2.6rem;
     margin: 0 auto;
@@ -28,14 +28,13 @@
 }
 
 @media (max-width: 768px) {
-	  header nav {
+  header nav {
     position: absolute;
     top: 75px;
     left: 0;
     width: 100%;
     background-color: var(--primary-bg-color);
     box-shadow: 0 5px 10px var(--shadow-light);
-
     visibility: hidden;
     opacity: 0;
     transform: translateY(-10px);
