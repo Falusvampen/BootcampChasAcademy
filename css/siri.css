@@ -20,9 +20,10 @@
 }
 
 .profileimg {
-  max-width: 90%;
   border-radius: 100%;
   box-shadow: 0 0 16px rgb(0, 0, 0, 0.5);
+  display: block;
+  width: 70%;
 }
 
 .back-link {
