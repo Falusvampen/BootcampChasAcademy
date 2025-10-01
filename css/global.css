@@ -13,8 +13,6 @@
   --transition-speed: 0.2s;
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient */
   --seamless-gradient: linear-gradient(to bottom right, #530e0eff, #582f2fff);
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient */
-  --seamless-gradient: linear-gradient(to bottom right, #530e0eff, #582f2fff);
 }
 
 /*2. GRUNDLÄGGANDE STILAR (BODY, TYPOGRAFI)*/
@@ -29,8 +27,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
-  background-image: var(--seamless-gradient);
-  background-attachment: fixed;
   background-image: var(--seamless-gradient);
   background-attachment: fixed;
   color: var(--primary-text-color);
@@ -59,49 +55,26 @@ main {
 
 p {
   text-shadow: 4px 4px 10px var(--shadow-dark);
-  padding: 1rem;
-  padding-top: 0;
-  background: transparent;
-}
-
-.main-content-wrapper {
-  width: 100%;
-  min-height: 100dvh;
-  background-image: linear-gradient(to bottom right, #331a1a, #402a2a);
-  border-radius: 15px;
-  box-shadow: inset 0 0 15px var(--shadow-dark);
-  box-sizing: border-box;
-  overflow: auto;
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
-
-p {
-  text-shadow: 4px 4px 10px var(--shadow-dark);
 }
 
 h1 {
   font-size: 3.7rem;
-  text-shadow: 4px 4px 10px var(--shadow-dark);
   text-shadow: 4px 4px 10px var(--shadow-dark);
 }
 
 h2 {
   font-size: 2rem;
   text-shadow: 4px 4px 10px var(--shadow-dark);
-  text-shadow: 4px 4px 10px var(--shadow-dark);
 }
 
 h3 {
   font-size: 1.75rem;
-  text-shadow: 4px 4px 10px var(--shadow-dark);
   text-shadow: 4px 4px 10px var(--shadow-dark);
 }
 
 .hero {
   display: flex;
   align-items: center;
-  background-image: url("../images/Computer\ \(hero\).webp");
   background-image: url("../images/Computer\ \(hero\).webp");
   background-position: 0% 56%;
   margin: 0 0 5em 0;
@@ -134,7 +107,6 @@ nav a {
   position: relative;
   display: inline-block;
   text-shadow: 4px 4px 10px var(--shadow-dark);
-  text-shadow: 4px 4px 10px var(--shadow-dark);
 }
 
 /* Gemensam hover-effekt för alla nav-länkar */
@@ -165,7 +137,6 @@ nav a:hover::after {
 
 /* ----- Header ----- */
 header {
-  background: transparent;
   background: transparent;
   padding: 0.8rem 1rem;
   display: flex;
