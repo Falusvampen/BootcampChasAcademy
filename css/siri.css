@@ -8,18 +8,20 @@
   justify-content: center;
   row-gap: 20px;
   padding: 30px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .text-box {
   border-radius: 15px;
   padding: 20px 30px;
-  background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
+  background-color: #501d1d;
+  box-shadow: 0 0 16px var(--shadow-medium);
 }
 
 .profileimg {
   max-width: 90%;
   border-radius: 100%;
-  align-self: center;
   box-shadow: 0 0 16px rgb(0, 0, 0, 0.5);
 }
 

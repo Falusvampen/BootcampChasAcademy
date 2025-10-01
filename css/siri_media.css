@@ -2,9 +2,15 @@
 }
 
 @media (min-width: 576px) {
+  .profileimg {
+    max-width: 60%;
+  }
 }
 
 @media (min-width: 768px) {
+  .text-box {
+    max-width: 600px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -16,11 +22,24 @@
     flex-direction: row;
     column-gap: 30px;
     max-width: 1700px;
-    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .flex-item {
+    flex: 1;
   }
 
   .back-link {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+  }
+
+  .profileimg {
+    max-width: 30%;
   }
 }
 
