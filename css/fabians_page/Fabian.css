@@ -1,6 +1,6 @@
 .content-wrapper-fabian {
-	display: grid;
-	grid-template-rows: auto 1fr;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .hero_fabian {
@@ -55,6 +55,11 @@ p {
 }
 
 .bild2.active {
+  opacity: 1;
+  display: block;
+}
+
+.bild3.active {
   opacity: 1;
   display: block;
 }
