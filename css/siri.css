@@ -14,9 +14,9 @@
 
 .text-box {
   border-radius: 15px;
-  padding: 20px 30px;
-  background-color: #501d1d;
-  box-shadow: 0 0 16px var(--shadow-medium);
+  padding: 0px 30px;
+  /*background-color: #501d1d;
+  box-shadow: 0 0 16px var(--shadow-medium); */
 }
 
 .profileimg {
