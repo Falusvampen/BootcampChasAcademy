@@ -162,7 +162,7 @@
   }
 
   .profile {
-    max-width: 80%;
+    max-width: 85%;
   }
 
   p {
@@ -196,10 +196,10 @@
     justify-self: center;
     justify-content: center;
     align-self: center;
-    margin: 2em;
+    margin: 3em;
     width: fit-content;
     min-height: 754px;
-    max-width: 105em;
+    max-width: 110em;
   }
 
   .profile {
@@ -207,12 +207,12 @@
   }
 
   .profileimg {
-    width: 15em;
+    width: 17em;
   }
 
   .slides {
     width: 100%;
-    max-width: 47em;
+    max-width: 50em;
     justify-content: space-between;
   }
 
