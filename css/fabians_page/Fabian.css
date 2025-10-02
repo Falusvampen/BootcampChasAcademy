@@ -1,3 +1,8 @@
+.content-wrapper-fabian {
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
+
 .hero_fabian {
   display: flex;
   align-items: center;
