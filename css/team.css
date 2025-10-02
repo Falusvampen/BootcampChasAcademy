@@ -1,3 +1,8 @@
+.content-wrapper-team {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
 .profiles {
   display: flex;
   flex-direction: row;
@@ -6,7 +11,7 @@
   justify-self: center;
   flex-wrap: wrap;
   gap: 4em;
-	max-width: 93%;
+  max-width: 93%;
 }
 
 .profilecomp {
