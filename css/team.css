@@ -56,3 +56,27 @@
   white-space: wrap;
   text-shadow: 4px 4px 5px var(--shadow-dark);
 }
+
+.profilecomp.axel {
+  animation: animationIn-team 1s 100ms;
+  opacity: 0;
+}
+
+.profilecomp.siri {
+  animation: animationIn-team 1s 200ms;
+  opacity: 0;
+}
+
+.profilecomp.fabian {
+  animation: animationIn-team 1s 200ms;
+  opacity: 0;
+}
+
+@keyframes animationIn-team {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
