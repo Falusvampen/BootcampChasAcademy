@@ -2,12 +2,10 @@ const quoteButton = document.querySelector(".quote-btn");
 const quoteText = document.querySelector(".quote-text");
 const quoteAuthor = document.querySelector(".quote-author");
 
-console.log(quoteAuthor);
-
 const listOfQuotes = [
   {
     quote:
-      "“Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live”",
+      "“Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.”",
     author: "John Woods",
   },
   {
@@ -38,9 +36,11 @@ const listOfQuotes = [
 
 quoteButton.addEventListener("click", () => {
   let quoteIndex = Math.floor(Math.random() * listOfQuotes.length);
-  console.log(listOfQuotes[quoteIndex]);
+
+  while (listOfQuotes[quoteIndex].quote === quoteText.innerHTML) {
+    quoteIndex = Math.floor(Math.random() * listOfQuotes.length);
+  }
 
   quoteText.innerHTML = listOfQuotes[quoteIndex].quote;
   quoteAuthor.innerHTML = listOfQuotes[quoteIndex].author;
-
 });
