@@ -1,6 +1,8 @@
 const quoteButton = document.querySelector(".quote-btn");
 const quoteText = document.querySelector(".quote-text");
-const quoteAuthor = document.querySelector(".qote-author");
+const quoteAuthor = document.querySelector(".quote-author");
+
+console.log(quoteAuthor);
 
 const listOfQuotes = [
   {
@@ -33,3 +35,12 @@ const listOfQuotes = [
     author: "Muhammad Waseem",
   },
 ];
+
+quoteButton.addEventListener("click", () => {
+  let quoteIndex = Math.floor(Math.random() * listOfQuotes.length);
+  console.log(listOfQuotes[quoteIndex]);
+
+  quoteText.innerHTML = listOfQuotes[quoteIndex].quote;
+  quoteAuthor.innerHTML = listOfQuotes[quoteIndex].author;
+
+});
