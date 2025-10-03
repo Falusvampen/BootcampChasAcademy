@@ -6,7 +6,7 @@
 
   .profilecomp {
     height: unset;
-		width: 17em;
+    width: 17em;
   }
 
   .profileheading {
@@ -26,7 +26,7 @@
 
   .profilecomp {
     height: unset;
-		width: 19em;
+    width: 19em;
   }
 
   .profileheading {
@@ -65,5 +65,19 @@
 @media (min-width: 1400px) {
   .profiles {
     margin: 3em 0 8em 0;
+  }
+}
+
+@media (max-width: 1261px) {
+  .profilecomp.axel {
+    animation: animationIn-team 1s 400ms;
+  }
+
+  .profilecomp.siri {
+    animation: animationIn-team 1s 200ms;
+  }
+
+  .profilecomp.fabian {
+    animation: animationIn-team 1s 600ms;
   }
 }
