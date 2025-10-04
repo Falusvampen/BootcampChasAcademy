@@ -9,6 +9,12 @@
     width: 17em;
   }
 
+  .profileimg {
+    height: auto;
+    max-width: 100%;
+    width: 16em;
+  }
+
   .profileheading {
     align-self: center;
   }
