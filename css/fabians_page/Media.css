@@ -1,4 +1,8 @@
 @media (max-width: 575px) {
+  .content-wrapper-fabian {
+    display: block;
+  }
+
   .hero_fabian {
     height: 10em;
     background-size: unset;
@@ -23,8 +27,8 @@
   }
 
   .profileimg {
-    width: 16em;
-    max-width: 70%;
+    width: 15em;
+    max-width: 100%;
   }
 
   p {
@@ -163,6 +167,10 @@
 
   .profile {
     max-width: 85%;
+  }
+
+  .profileimg {
+    width: 19em;
   }
 
   p {
