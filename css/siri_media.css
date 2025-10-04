@@ -41,6 +41,10 @@
   .profileimg {
     max-width: 300px;
   }
+
+  .quote-heading {
+    text-align: center;
+  }
 }
 
 @media (min-width: 1400px) {
