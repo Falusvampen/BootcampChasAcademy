@@ -1,4 +1,8 @@
 @media (max-width: 575px) {
+  .content-wrapper-team {
+    display: block;
+  }
+
   .profiles {
     margin: -1em auto 2em auto;
     gap: 2em;
@@ -7,6 +11,12 @@
   .profilecomp {
     height: unset;
     width: 17em;
+  }
+
+  .profileimg {
+    height: auto;
+    max-width: 100%;
+    width: 16em;
   }
 
   .profileheading {
