@@ -1,12 +1,11 @@
-
 * {
   box-sizing: border-box;
 }
 
 .timeline {
   --line-x: 24px;
-  --connector-l: 40px; 
-  --gap: 0px; 
+  --connector-l: 40px;
+  --gap: 0px;
   position: relative;
   max-width: 1700px;
   margin: 100px auto;
@@ -44,7 +43,7 @@
   position: relative;
   width: 100%;
   padding: 10px 16px 10px calc(var(--line-x) + var(--connector-l) + var(--gap));
-  opacity: 0; 
+  opacity: 0;
   animation: movedown 0.9s ease-out forwards;
 }
 
@@ -83,7 +82,7 @@
   border-radius: 15px;
   padding: 20px 30px;
   background-image: linear-gradient(to bottom right, #501d1d, #402a2a);
-  z-index: 2; 
+  z-index: 2;
 }
 
 .connector {

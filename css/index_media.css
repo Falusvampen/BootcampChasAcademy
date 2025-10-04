@@ -70,7 +70,6 @@
   }
 }
 
-/* Tillgänglighet */
 @media (prefers-reduced-motion: reduce) {
   .timeline > .container {
     animation: none;
