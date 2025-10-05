@@ -1,11 +1,18 @@
-var siri = document.querySelector(".profilecomp.siri");
-var axel = document.querySelector(".profilecomp.axel");
-var fabian = document.querySelector(".profilecomp.fabian");
+const siri = document.querySelector(".profilecomp.siri");
+const axel = document.querySelector(".profilecomp.axel");
+const fabian = document.querySelector(".profilecomp.fabian");
 
-function profileOpacity() {
-  siri.style.opacity = "1";
-	axel.style.opacity = "1";
-	fabian.style.opacity = "1";
+window.addEventListener("scroll", mobileAnimation);
+
+function mobileAnimation() {
+  var siriPosition = siri.getBoundingClientRect();
+  var axelPosition = axel.getBoundingClientRect();
+
+  if (siriPosition.top < 30) {
+    axel.classList.add("mobile");
+  }
+  if (axelPosition.top < 30) {
+    fabian.classList.add("mobile");
+		window.removeEventListener("scroll", mobileAnimation)
+  }
 }
-
-setTimeout(profileOpacity, 1000);
