@@ -1,5 +1,5 @@
 @media (max-width: 575px) {
-  .content-wrapper-fabian {
+  .content-wrapper_fabian {
     display: block;
   }
 
@@ -59,7 +59,7 @@
     padding: 0 2em;
   }
 
-  .commit_history_fabian {
+  .commit-history_fabian {
     margin: -4em -1em -1.5em;
   }
 }
@@ -118,7 +118,7 @@
     padding: 0 2em;
   }
 
-  .commit_history_fabian {
+  .commit-history_fabian {
     margin: -4em 0 -1em;
   }
 }
