@@ -1,12 +1,9 @@
 const axel = document.querySelector(".profilecomp.axel");
 const fabian = document.querySelector(".profilecomp.fabian");
 const contentWrapper = document.querySelector(".content-wrapper-team");
-const contentwrapperStyle = window.getComputedStyle(contentWrapper);
+const contentWrapperStyle = window.getComputedStyle(contentWrapper);
 
-if (
-  contentwrapperStyle.display == "block" &&
-  !fabian.classList.contains("animate")
-) {
+if (contentWrapperStyle.display == "block") {
   window.addEventListener("scroll", mobileAnimation);
 }
 
