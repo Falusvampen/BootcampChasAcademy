@@ -15,16 +15,16 @@
 
   .profilecomp.axel,
   .profilecomp.fabian {
-    animation: none;
     opacity: 0;
   }
 
-  .profilecomp.axel.mobile {
-    animation: animationIn-team-mobile 1s both;
+  .profilecomp.siri {
+    animation: animationIn-team-mobile 1s forwards;
   }
 
-  .profilecomp.fabian.mobile {
-    animation: animationIn-team-mobile 1s both;
+  .profilecomp.axel.animate,
+  .profilecomp.fabian.animate {
+    animation: animationIn-team-mobile 1s forwards;
   }
 
   .profileimg {
@@ -53,16 +53,16 @@
     width: 19em;
   }
 
-  .profilecomp.axel {
-    animation: animationIn-team 1s 400ms both;
+  .profilecomp.siri {
+    animation: animationIn-team 1s 150ms both;
   }
 
-  .profilecomp.siri {
-    animation: animationIn-team 1s 200ms both;
+  .profilecomp.axel {
+    animation: animationIn-team 1s 350ms both;
   }
 
   .profilecomp.fabian {
-    animation: animationIn-team 1s 600ms both;
+    animation: animationIn-team 1s 550ms both;
   }
 
   .profileheading {
@@ -92,14 +92,14 @@
   }
 }
 
-@media (min-width: 1261px) {
+@media (min-width: 1262px) {
   .profilecomp.axel {
-    animation: animationIn-team 1s 200ms both;
+    animation: animationIn-team 1s 150ms both;
   }
 
   .profilecomp.siri,
   .profilecomp.fabian {
-    animation: animationIn-team 1s 400ms both;
+    animation: animationIn-team 1s 300ms both;
   }
 }
 
