@@ -1,18 +1,25 @@
-const siri = document.querySelector(".profilecomp.siri");
 const axel = document.querySelector(".profilecomp.axel");
 const fabian = document.querySelector(".profilecomp.fabian");
+const contentWrapper = document.querySelector(".content-wrapper-team");
+const contentwrapperStyle = window.getComputedStyle(contentWrapper);
 
-window.addEventListener("scroll", mobileAnimation);
+if (
+  contentwrapperStyle.display == "block" &&
+  !fabian.classList.contains("animate")
+) {
+  window.addEventListener("scroll", mobileAnimation);
+}
 
 function mobileAnimation() {
-  var siriPosition = siri.getBoundingClientRect();
-  var axelPosition = axel.getBoundingClientRect();
+  let axelPosition = axel.getBoundingClientRect();
+  let fabianPosition = fabian.getBoundingClientRect();
 
-  if (siriPosition.top < 30) {
-    axel.classList.add("mobile");
+  if (axelPosition.bottom < 1050) {
+    axel.classList.add("animate");
   }
-  if (axelPosition.top < 30) {
-    fabian.classList.add("mobile");
-		window.removeEventListener("scroll", mobileAnimation)
+
+  if (fabianPosition.bottom < 1050) {
+    fabian.classList.add("animate");
+    window.removeEventListener("scroll", mobileAnimation);
   }
 }
