@@ -13,7 +13,7 @@
     font-size: 2.1rem;
   }
 
-  .middle {
+  .core-content {
     width: 94.5%;
     margin: 0.5em;
     display: flex;
@@ -70,7 +70,7 @@
     background-size: unset;
   }
 
-  .middle {
+  .core-content {
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -197,7 +197,7 @@
 }
 
 @media (min-width: 1400px) {
-  .middle {
+  .core-content {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     align-items: center;
