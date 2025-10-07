@@ -56,7 +56,7 @@ p {
 .bild1.active, .bild2.active, .bild3.active {
   opacity: 1;
   display: block;
-	animation: animationIn 200ms;
+	animation: animationIn 500ms;
 }
 
 .buttons {
@@ -120,13 +120,12 @@ p {
   overflow: scroll;
   box-shadow: inset 0 0 15px var(--shadow-dark);
   border-radius: 10px;
-	animation: animationIn 200ms;
+	animation: animationIn 500ms;
 }
 
 #commits_fabian.inactive {
   opacity: 0;
   display: none;
-	animation: animationOut 200ms;
 }
 
 @keyframes animationIn {
@@ -135,14 +134,5 @@ p {
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes animationOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
   }
 }
