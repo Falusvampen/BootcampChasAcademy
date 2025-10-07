@@ -1,96 +1,125 @@
 <!DOCTYPE html>
 <html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Individuell sida - Fabian Yousif</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/global_media.css" />
+    <link rel="stylesheet" href="../css/fabians_page/Fabian.css" />
+    <link rel="stylesheet" href="../css/fabians_page/Media.css" />
+    <link rel="stylesheet" href="../css/commit.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <script src="../scripts/setBasePath.js"></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Individuell sida - Fabian Yousif</title>
-	<link rel="stylesheet" href="../css/global.css">
-	<link rel="stylesheet" href="../css/global_media.css">
-	<link rel="stylesheet" href="../css/fabians_page/Fabian.css">
-	<link rel="stylesheet" href="../css/fabians_page/Media.css">
-	<link rel="stylesheet" href="../css/commit.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-	<script src="../scripts/setBasePath.js"></script>
-	<script src="../env.js"></script>
-</head>
+  <body>
+    <div id="header-container" data-component="header"></div>
 
+    <main>
+      <div class="main-content-wrapper content-wrapper_fabian">
+        <section
+          class="hero_fabian"
+          role="banner"
+          aria-label="En bärbar dator belyst av reflektioner i orange, rosa och lila färg"
+        >
+          <h1>Fabian</h1>
+        </section>
 
+        <div class="core-content">
+          <article class="profile">
+            <img
+              class="profileimg"
+              src="images/Fabian.webp"
+              alt="En kille med blå luvtröja står framför en å"
+            />
 
-<body>
-	<div id="header-container" data-component="header"></div>
+            <h2 id="h2_fabian">Reflektion över projektet</h2>
 
-	<main>
-		<div class="main-content-wrapper content-wrapper_fabian">
+            <p>
+              Under det här projektarbetet har jag lärt mig mycket om hur man
+              använder Git i praktiken, hur man jobbar i olika branches och
+              varför det är bra samt hur man löser merge konflikter och jobbar i
+              GitHub. Jag har lärt mig ännu mer om HTML, CSS, JavaScript och
+              mycket om metoder för bra responsiv design och tillgänglighet. Ett
+              exempel är hur jag fixade ett tillgänglighets problem i hero
+              bilderna på webbplatsen och knapparna på min individuella sida
+              genom att använda Aria labels.
+            </p>
+            <p>
+              Jag bidrog till teamet genom att planera och delta på möten,
+              hjälpa till med problem som gruppmedlemmarna stötte på och göra
+              ett ordentligt jobb med delarna av webbplatsen som jag byggde,
+              vilket var team sidan och alla hero sections. Jag höll regelbundet
+              koll i Jira så att allting var uppdaterat med rätt information och
+              status.
+            </p>
+            <p>
+              Kommunikationen i teamet fungerade väldigt bra och vi byggde en
+              bra grund med hjälp av Jira och Figma, där vi delade upp arbetet
+              mellan varandra och skapade en bild av hur vi ville att
+              webbplatsen skulle se ut. Då blev det tydligt vem som skulle göra
+              vad och ungefär hur det skulle se ut, vilket underlättade arbetet
+              en hel del. Vi kommunicerade ofta om arbetet i helhet, hjälpte
+              varandra och kom med nya förslag och idéer på förbättringar.
+            </p>
+          </article>
 
-			<section class="hero_fabian" role="banner" aria-label="En bärbar dator belyst av reflektioner i orange, rosa och lila färg">
-				<h1>Fabian</h1>
-			</section>
+          <div class="slides">
+            <button
+              aria-label="Pil som pekar åt vänster"
+              class="buttonleft buttons"
+            >
+              <i class="bi bi-arrow-left arrows"></i>
+            </button>
 
-			<div class="core-content">
+            <div class="theslides">
+              <div id="commits_fabian">
+                <div class="commit-history_fabian">
+                  <div
+                    id="commit-container"
+                    data-component="commit-section"
+                    data-repo-owner="Falusvampen"
+                    data-repo-name="BootcampChasAcademy"
+                    data-author="Fabian144"
+                  ></div>
+                </div>
+              </div>
 
-				<article class="profile">
-					<img class="profileimg" src="images/Fabian.webp" alt="En kille med blå luvtröja står framför en å">
+              <img
+                class="bilder bild1"
+                src="images/Lighthouse_fabian.webp"
+                alt="Lighthouse rapport för datorversionen av sidan"
+              />
+              <img
+                class="bilder bild2"
+                src="images/Lighthouse_mobile_fabian.webp"
+                alt="Lighthouse rapport för mobilversionen av sidan"
+              />
+              <img
+                class="bilder bild3"
+                src="images/Fabians_page_validation.webp"
+                alt="Resultatet för HTML valideringen av sidan"
+              />
+            </div>
 
-					<h2 id="h2_fabian">Reflektion över projektet</h2>
+            <button
+              aria-label="Pil som pekar åt höger"
+              class="buttonright buttons"
+            >
+              <i class="bi bi-arrow-right arrows"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
 
-					<p>
-						Under det här projektarbetet har jag lärt mig mycket om hur man använder Git i
-						praktiken, hur man jobbar i olika branches och varför det är bra samt hur man
-						löser merge konflikter och jobbar i GitHub. Jag har lärt mig ännu mer om HTML,
-						CSS, JavaScript och mycket om metoder för bra responsiv design och tillgänglighet.
-						Ett exempel är hur jag fixade ett tillgänglighets problem i hero bilderna på
-						webbplatsen och knapparna på min individuella sida genom att använda Aria labels.
-					</p>
-					<p>
-						Jag bidrog till teamet genom att planera och delta på möten,
-						hjälpa till med problem som gruppmedlemmarna stötte på och göra ett ordentligt
-						jobb med delarna av webbplatsen som jag byggde, vilket var team sidan och
-						alla hero sections. Jag höll regelbundet koll i Jira så att allting var uppdaterat
-						med rätt information och status.
-					</p>
-					<p>
-						Kommunikationen i teamet fungerade väldigt bra och vi byggde en bra grund
-						med hjälp av Jira och Figma, där vi delade upp arbetet mellan varandra och skapade
-						en bild av hur vi ville att webbplatsen skulle se ut. Då blev det tydligt vem som
-						skulle göra vad och ungefär hur det skulle se ut, vilket underlättade arbetet en hel del.
-						Vi kommunicerade ofta om arbetet i helhet, hjälpte varandra och kom med nya förslag
-						och idéer på förbättringar.
-					</p>
-				</article>
+    <div id="footer-container" data-component="footer"></div>
 
-				<div class="slides">
-					<button aria-label="Pil som pekar åt vänster" class="buttonleft buttons"><i class="bi bi-arrow-left arrows"></i></button>
-
-					<div class="theslides">
-						<div id="commits_fabian">
-							<div class="commit-history_fabian">
-								<div
-									id="commit-container"
-									data-component="commit-section"
-									data-repo-owner="Falusvampen"
-									data-repo-name="BootcampChasAcademy"
-									data-author="Fabian144"
-									></div>
-							</div>
-						</div>
-						
-						<img class="bilder bild1" src="images/Lighthouse_fabian.webp" alt="Lighthouse rapport för datorversionen av sidan">
-						<img class="bilder bild2" src="images/Lighthouse_mobile_fabian.webp" alt="Lighthouse rapport för mobilversionen av sidan">
-						<img class="bilder bild3" src="images/Fabians_page_validation.webp" alt="Resultatet för HTML valideringen av sidan">
-					</div>
-
-					<button aria-label="Pil som pekar åt höger" class="buttonright buttons"><i class="bi bi-arrow-right arrows"></i></button>
-				</div>
-
-			</div>
-		</div>
-	</main>
-
-	<div id="footer-container" data-component="footer"></div>
-
-	<script src="scripts/Fabian.js"></script>
-	<script type="module" src="scripts/loadComponent.js"></script>
-</body>
-
+    <script src="scripts/Fabian.js"></script>
+    <script type="module" src="scripts/loadComponent.js"></script>
+  </body>
 </html>

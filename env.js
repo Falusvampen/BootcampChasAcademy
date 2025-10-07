@@ -1,2 +1,0 @@
-const GITHUB_TOKEN =
-  "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";

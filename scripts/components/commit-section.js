@@ -1,3 +1,6 @@
+const nice =
+  "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";
+
 /**
  * Skapar ett HTML-element för en commit genom att klona och fylla en HTML-mall.
  * @param {object} commitData - Datan för en commit från GitHub API.
@@ -72,7 +75,7 @@ export async function fetchAndRenderCommits(repoOwner, repoName, commitAuthor) {
 
     const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/commits?author=${commitAuthor}&per_page=100`;
     const apiResponse = await fetch(apiUrl, {
-      headers: { Authorization: `Bearer ${GITHUB_TOKEN}` },
+      headers: { Authorization: `Bearer ${nice}` },
     });
 
     if (!apiResponse.ok) {
