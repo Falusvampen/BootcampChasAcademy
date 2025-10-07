@@ -49,28 +49,28 @@ function createCommitElement(commitData, templateFragment) {
 export async function fetchAndRenderCommits(repoOwner, repoName, commitAuthor) {
   const commitListHeader = document.getElementById("commit-list-header");
   const commitList = document.getElementById("commit-list");
+  const paginationControls = document.getElementById("pagination-controls");
+  const prevButton = document.getElementById("prev-page-btn");
+  const nextButton = document.getElementById("next-page-btn");
+  const pageInfo = document.getElementById("page-info");
 
-  if (!commitList || !commitListHeader) {
-    console.error(
-      "Fel: Kunde inte hitta #commit-list eller #commit-list-header."
-    );
+  if (!commitList || !paginationControls) {
+    console.error("Fel: Nödvändiga HTML-element saknas.");
     return;
   }
 
-  if (GITHUB_TOKEN) {
-    console.error("GitHub Access Token available.");
-  }
+  paginationControls.style.display = "none";
 
   try {
     const templateElement = document.getElementById("commit-item-templates");
     if (!templateElement) {
       throw new Error(
-        "Kunde inte hitta commit-mallen (#commit-item-templates) på sidan."
+        "Kunde inte hitta commit-mallen (#commit-item-templates)."
       );
     }
     const templateFragment = templateElement.content;
 
-    const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/commits?author=${commitAuthor}`;
+    const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/commits?author=${commitAuthor}&per_page=100`;
     const apiResponse = await fetch(apiUrl, {
       headers: { Authorization: `Bearer ${GITHUB_TOKEN}` },
     });
@@ -81,29 +81,60 @@ export async function fetchAndRenderCommits(repoOwner, repoName, commitAuthor) {
       );
     }
 
-    const commits = await apiResponse.json();
-    commitListHeader.innerHTML = "";
+    const allCommits = await apiResponse.json();
     commitList.innerHTML = "";
-    const commitsToShow = commits.slice(0, 100);
+    commitListHeader.innerHTML = "";
+
+    if (allCommits.length === 0) {
+      commitList.innerHTML = `<p>Hittade inga commits från ${commitAuthor}.</p>`;
+      return;
+    }
+
+    let currentPage = 1;
+    const itemsPerPage = 10;
+    const totalPages = Math.ceil(allCommits.length / itemsPerPage);
+
+    const renderPage = (page) => {
+      commitList.innerHTML = "";
+
+      const start = (page - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
+      const commitsForPage = allCommits.slice(start, end);
+
+      commitsForPage.forEach((commitData) => {
+        const commitElement = createCommitElement(commitData, templateFragment);
+        commitList.appendChild(commitElement);
+      });
+
+      pageInfo.textContent = `Sida ${page} av ${totalPages}`;
+      prevButton.disabled = page === 1;
+      nextButton.disabled = page >= totalPages;
+    };
+
+    nextButton.addEventListener("click", () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderPage(currentPage);
+      }
+    });
+
+    prevButton.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderPage(currentPage);
+      }
+    });
 
     const headerElement = document.createElement("div");
     headerElement.classList.add("commit-header-info");
     headerElement.innerHTML = `
-        <h3>Commits av ${commitAuthor} på ${repoName}</h3>
-        <p>Visar de ${commitsToShow.length} senaste bidragen.</p>
+      <h3>Commits av ${commitAuthor} på ${repoName}</h3>
+      <p>Visar ${allCommits.length} totala bidrag.</p>
     `;
     commitListHeader.appendChild(headerElement);
 
-    if (commitsToShow.length === 0) {
-      commitList.innerHTML =
-        "<p>Hittade inga commits från denna användare i detta repo.</p>";
-      return;
-    }
-
-    commitsToShow.forEach((commitData) => {
-      const commitElement = createCommitElement(commitData, templateFragment);
-      commitList.appendChild(commitElement);
-    });
+    paginationControls.style.display = "flex";
+    renderPage(1);
   } catch (error) {
     console.error("Ett fel uppstod:", error);
     const container = document.getElementById("commit-list-container");
