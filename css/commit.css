@@ -130,3 +130,33 @@
 .commit-item > .commit-details {
   margin-top: 0.5rem;
 }
+
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color-light);
+}
+
+.pagination-controls button {
+  background-color: transparent;
+  border: 1px solid var(--border-color-light);
+  color: var(--primary-text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed);
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.pagination-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
