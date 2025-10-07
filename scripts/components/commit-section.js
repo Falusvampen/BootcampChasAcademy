@@ -1,5 +1,5 @@
 const nice =
-  "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";
+  "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";
 
 /**
  * Skapar ett HTML-element för en commit genom att klona och fylla en HTML-mall.
