@@ -1,4 +1,8 @@
 @media (max-width: 575px) {
+  .content-wrapper_fabian {
+    display: block;
+  }
+
   .hero_fabian {
     height: 10em;
     background-size: unset;
@@ -9,7 +13,7 @@
     font-size: 2.1rem;
   }
 
-  .middle {
+  .core-content {
     width: 94.5%;
     margin: 0.5em;
     display: flex;
@@ -18,13 +22,13 @@
   }
 
   .profile {
-    padding: 2em 1em 1em;
-    max-width: 90%;
+    margin-top: 2em;
+    max-width: 93%;
   }
 
   .profileimg {
-    width: 16em;
-    max-width: 70%;
+    width: 14em;
+    max-width: 100%;
   }
 
   p {
@@ -41,7 +45,7 @@
     flex-direction: column-reverse;
     align-items: center;
     max-width: 100%;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
   }
 
   .bilder {
@@ -55,7 +59,7 @@
     padding: 0 2em;
   }
 
-  .commit_history_fabian {
+  .commit-history_fabian {
     margin: -4em -1em -1.5em;
   }
 }
@@ -66,7 +70,7 @@
     background-size: unset;
   }
 
-  .middle {
+  .core-content {
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -114,7 +118,7 @@
     padding: 0 2em;
   }
 
-  .commit_history_fabian {
+  .commit-history_fabian {
     margin: -4em 0 -1em;
   }
 }
@@ -165,6 +169,10 @@
     max-width: 85%;
   }
 
+  .profileimg {
+    width: 19em;
+  }
+
   p {
     font-size: 1.1em;
   }
@@ -189,7 +197,7 @@
 }
 
 @media (min-width: 1400px) {
-  .middle {
+  .core-content {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     align-items: center;
@@ -199,11 +207,11 @@
     margin: 3em;
     width: fit-content;
     min-height: 754px;
-    max-width: 110em;
+    max-width: 120em;
   }
 
   .profile {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .profileimg {

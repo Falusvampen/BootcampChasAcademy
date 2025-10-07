@@ -16,8 +16,8 @@
 .qa-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* allows the cards to stack or grow independently of each other. */
-  align-items: center; /* allows the cards to stack or grow independently of each other. */
+  flex-wrap: wrap;
+  align-items: center; 
 }
 
 .qa-question {

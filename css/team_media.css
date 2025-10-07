@@ -1,4 +1,8 @@
 @media (max-width: 575px) {
+  .content-wrapper-team {
+    display: block;
+  }
+
   .profiles {
     margin: -1em auto 2em auto;
     gap: 2em;
@@ -7,6 +11,26 @@
   .profilecomp {
     height: unset;
     width: 17em;
+  }
+
+  .profilecomp.axel,
+  .profilecomp.fabian {
+    opacity: 0;
+  }
+
+  .profilecomp.siri {
+    animation: animationIn-team-mobile 1s forwards;
+  }
+
+  .profilecomp.axel.animate,
+  .profilecomp.fabian.animate {
+    animation: animationIn-team-mobile 1s forwards;
+  }
+
+  .profileimg {
+    height: auto;
+    max-width: 100%;
+    width: 16em;
   }
 
   .profileheading {
@@ -27,6 +51,18 @@
   .profilecomp {
     height: unset;
     width: 19em;
+  }
+
+  .profilecomp.siri {
+    animation: animationIn-team 1s 150ms both;
+  }
+
+  .profilecomp.axel {
+    animation: animationIn-team 1s 350ms both;
+  }
+
+  .profilecomp.fabian {
+    animation: animationIn-team 1s 550ms both;
   }
 
   .profileheading {
@@ -56,6 +92,17 @@
   }
 }
 
+@media (min-width: 1262px) {
+  .profilecomp.axel {
+    animation: animationIn-team 1s 150ms both;
+  }
+
+  .profilecomp.siri,
+  .profilecomp.fabian {
+    animation: animationIn-team 1s 300ms both;
+  }
+}
+
 @media (min-width: 1200px) {
   .profilecomp {
     height: 430px;
@@ -65,19 +112,5 @@
 @media (min-width: 1400px) {
   .profiles {
     margin: 3em 0 8em 0;
-  }
-}
-
-@media (max-width: 1261px) {
-  .profilecomp.axel {
-    animation: animationIn-team 1s 400ms;
-  }
-
-  .profilecomp.siri {
-    animation: animationIn-team 1s 200ms;
-  }
-
-  .profilecomp.fabian {
-    animation: animationIn-team 1s 600ms;
   }
 }

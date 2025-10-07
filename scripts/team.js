@@ -1,11 +1,22 @@
-var siri = document.querySelector(".profilecomp.siri");
-var axel = document.querySelector(".profilecomp.axel");
-var fabian = document.querySelector(".profilecomp.fabian");
+const axel = document.querySelector(".profilecomp.axel");
+const fabian = document.querySelector(".profilecomp.fabian");
+const contentWrapper = document.querySelector(".content-wrapper-team");
+const contentWrapperStyle = window.getComputedStyle(contentWrapper);
 
-function profileOpacity() {
-  siri.style.opacity = "1";
-	axel.style.opacity = "1";
-	fabian.style.opacity = "1";
+if (contentWrapperStyle.display == "block") {
+  window.addEventListener("scroll", mobileAnimation);
 }
 
-setTimeout(profileOpacity, 1000);
+function mobileAnimation() {
+  let axelPosition = axel.getBoundingClientRect();
+  let fabianPosition = fabian.getBoundingClientRect();
+
+  if (axelPosition.bottom < 1050) {
+    axel.classList.add("animate");
+  }
+
+  if (fabianPosition.bottom < 1050) {
+    fabian.classList.add("animate");
+    window.removeEventListener("scroll", mobileAnimation);
+  }
+}

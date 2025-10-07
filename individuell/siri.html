@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Siris profile page</title>
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/global_media.css" />
-  
+
     <link rel="stylesheet" href="../css/siri.css" />
     <link rel="stylesheet" href="../css/siri_media.css" />
-     <link rel="stylesheet" href="../css/commit.css" />
-     <script src="../scripts/setBasePath.js"></script>
-     <script src="../env.js"></script>
+    <link rel="stylesheet" href="../css/commit.css" />
+    <script src="../scripts/setBasePath.js"></script>
+    <script src="../env.js"></script>
+    <script src="scripts/siri.js" defer></script>
   </head>
   <body>
     <div id="header-container" data-component="header"></div>
@@ -25,44 +26,69 @@
         >
           <h1>Siri</h1>
         </section>
-      <section class="flex-container">
-            <img
-              class="profileimg flex-item"
-              src="images/Siri.webp"
-              alt="En brunhårig tjej ler mot kameran"
-            />
-                
-            <div class="text-box flex-item">
-              <h2>Vad jag har lärt mig</h2>
-              <p>
-               I det här projektet har jag fått skapa en webbsida från idé till färdig utveckling tillsammans med andra, vilket gett mig många nya insikter. Jag har bland annat lärt mig att arbeta praktiskt i Git och GitHub: att skapa och namnge branches, hantera merge conflicts och hitta gemensamma arbetsflöden i teamet. Jag har också utvecklat min förmåga att lösa kodproblem steg för steg och bryta ner utmaningar i mindre delar. Jag har fått öva på att ta hjälp av mina gruppmedlemmar, arbeta med AI-verktyg, använda tutorials och läsa dokumentation.
-              </p>
-            </div>
-               <div class="text-box flex-item">
-              <h2>Samarbete</h2>
-              <p>Mitt bidrag har varit både organisatoriskt och praktiskt. Jag tog fram agendan till vårt första möte, ledde en förväntansavstämning och kontaktade vår intervjuperson David. På webbplatsen kodade jag tidslinjen och QA-sidan, samt deltog i en gemensam design-session där vi skapade wireframes och den visuella profilen. Samarbetet fungerade bra i gruppen tack vare gemensamt ansvarstagande och viljan att stötta varandra. Alla bidrog aktivt och var tillgängliga för att hjälpa till, vilket gjorde att vi kunde lösa problem snabbt och hålla hög kvalitet i vårt arbete.
-              </p>
-            </div>
-      </section>
+        <section class="flex-container">
+          <img
+            class="profileimg flex-item"
+            src="images/Siri.webp"
+            alt="En brunhårig tjej ler mot kameran"
+          />
 
-       <section class="flex-container">
-         <div
+          <div class="text-box flex-item">
+            <h2>Vad jag har lärt mig</h2>
+            <p>
+              I det här projektet har jag fått skapa en webbsida från idé till
+              färdig utveckling tillsammans med andra, vilket gett mig många nya
+              insikter. Jag har bland annat lärt mig att arbeta praktiskt i Git
+              och GitHub: att skapa och namnge branches, hantera merge conflicts
+              och hitta gemensamma arbetsflöden i teamet. Jag har också
+              utvecklat min förmåga att lösa kodproblem steg för steg och bryta
+              ner utmaningar i mindre delar. Jag har fått öva på att ta hjälp av
+              mina gruppmedlemmar, arbeta med AI-verktyg, använda tutorials och
+              läsa dokumentation.
+            </p>
+          </div>
+          <div class="text-box flex-item">
+            <h2>Samarbete</h2>
+            <p>
+              Mitt bidrag har varit både organisatoriskt och praktiskt. Jag tog
+              fram agendan till vårt första möte, ledde en förväntansavstämning
+              och kontaktade vår intervjuperson David. På webbplatsen kodade jag
+              tidslinjen och QA-sidan, samt deltog i en gemensam design-session
+              där vi skapade wireframes och den visuella profilen. Samarbetet
+              fungerade bra i gruppen tack vare gemensamt ansvarstagande och
+              viljan att stötta varandra. Alla bidrog aktivt och var
+              tillgängliga för att hjälpa till, vilket gjorde att vi kunde lösa
+              problem snabbt och hålla hög kvalitet i vårt arbete.
+            </p>
+          </div>
+        </section>
+        <section class="quote-flexbox">
+          <h2 class="quote-heading">Kodcitat</h2>
+          <div class="quote">
+            <p class="quote-text">
+              “People think that computer science is the art of geniuses but the
+              actual reality is the opposite, just many people doing things that
+              build on each other, like a wall of mini stones.”
+            </p>
+            <small class="quote-author">Donald Knuth</small>
+          </div>
+          <button class="quote-btn">Generera nytt citat</button>
+        </section>
+        <div class="flex-container">
+          <div
             id="commit-container"
             data-component="commit-section"
             data-repo-owner="Falusvampen"
             data-repo-name="BootcampChasAcademy"
             data-author="siriprydz"
           ></div>
-       </section> 
+        </div>
 
-                 <a href="team.html" class="back-link">← Back to the team</a>
-
-     </div>
+        <a href="team.html" class="back-link">← Back to the team</a>
+      </div>
     </main>
 
     <div id="footer-container" data-component="footer"></div>
     <script type="module" src="scripts/loadComponent.js"></script>
   </body>
 </html>
-
-
