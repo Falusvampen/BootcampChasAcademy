@@ -89,7 +89,7 @@
   }
 
   .profile {
-    padding: 2em 1em 1em 0;
+    padding: 2em;
     max-width: 90%;
   }
 
@@ -255,7 +255,7 @@
   }
 
   .profile {
-    max-width: 95%;
+    max-width: 100%;
   }
 
   .profileimg {
@@ -264,12 +264,12 @@
 
   .slides {
     width: 100%;
-    max-width: 47em;
+    max-width: 45em;
     justify-content: space-between;
   }
 
   .theslides {
-    max-width: 77%;
+    max-width: 75%;
     margin-bottom: 0;
   }
 
