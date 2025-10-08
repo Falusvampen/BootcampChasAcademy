@@ -63,13 +63,8 @@
     margin: -4em -1em -1.5em;
   }
 
-  .table_heading {
-    margin-left: auto;
-  }
-
-	table {
+	.table-container {
 		margin: auto;
-		margin-bottom: 5%;
 	}
 }
 
@@ -231,8 +226,7 @@
   .core-content {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
-    align-items: center;
-    justify-self: center;
+		align-self: center;
     margin: 3em;
     width: fit-content;
     min-height: 754px;
@@ -241,7 +235,7 @@
   }
 
   .profile {
-    max-width: 90%;
+    max-width: 93%;
   }
 
   .profileimg {
@@ -250,7 +244,7 @@
 
   .slides {
     width: 100%;
-    max-width: 50em;
+    max-width: 47em;
     justify-content: space-between;
   }
 
