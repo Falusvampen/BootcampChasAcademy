@@ -12,7 +12,7 @@
 }
 
 .core-content {
-	animation: animationIn 1s;
+  animation: animationIn 1s;
 }
 
 .profile {
@@ -45,7 +45,7 @@ p {
   justify-self: center;
 }
 
-.bilder {
+.images {
   border-radius: 10px;
   opacity: 0;
   display: none;
@@ -53,10 +53,12 @@ p {
   max-width: 90%;
 }
 
-.bild1.active, .bild2.active, .bild3.active {
+.img1.active,
+.img2.active,
+.img3.active {
   opacity: 1;
   display: block;
-	animation: animationIn 500ms;
+  animation: animationIn 500ms;
 }
 
 .buttons {
@@ -73,7 +75,7 @@ p {
 }
 
 .buttons:focus {
-	outline-color: white;
+  outline-color: white;
 }
 
 .buttonleft:hover {
@@ -120,12 +122,37 @@ p {
   overflow: scroll;
   box-shadow: inset 0 0 15px var(--shadow-dark);
   border-radius: 10px;
-	animation: animationIn 500ms;
+  animation: animationIn 500ms;
 }
 
 #commits_fabian.inactive {
   opacity: 0;
   display: none;
+}
+
+.back-link {
+  display: none;
+}
+
+.table-container {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  justify-self: center;
+}
+
+.table-heading {
+  justify-self: center;
+  text-align: center;
+}
+
+table {
+  justify-self: center;
+	width: 100%;
+}
+
+td {
+  padding: 0.5em;
+  outline: 2px solid white;
 }
 
 @keyframes animationIn {
