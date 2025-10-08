@@ -62,6 +62,15 @@
   .commit-history_fabian {
     margin: -4em -1em -1.5em;
   }
+
+  .table_heading {
+    margin-left: auto;
+  }
+
+	table {
+		margin: auto;
+		margin-bottom: 5%;
+	}
 }
 
 @media (min-width: 576px) {
@@ -162,7 +171,7 @@
   }
 
   .back-link {
-		display: inline-block;
+    display: inline-block;
     color: var(--primary-text-color);
     text-decoration: none;
     padding: 0.75rem 1.5rem;
@@ -224,12 +233,11 @@
     grid-template-columns: 1.1fr 1fr;
     align-items: center;
     justify-self: center;
-    justify-content: center;
-    align-self: center;
     margin: 3em;
     width: fit-content;
     min-height: 754px;
     max-width: 120em;
+		margin-bottom: 0;
   }
 
   .profile {

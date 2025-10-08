@@ -134,7 +134,20 @@ p {
 	display: none;
 }
 
+.table_heading {
+	justify-self: center;
+	max-width: 90%;
+}
 
+table {
+	max-width: 90%;
+	justify-self: center;
+	margin-bottom: 3%;
+}
+
+td {
+	outline: 2px solid white;
+}
 
 @keyframes animationIn {
   from {
