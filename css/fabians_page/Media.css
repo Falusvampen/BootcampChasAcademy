@@ -146,6 +146,9 @@
 
   #commits_fabian {
     margin-top: 1em;
+		box-shadow: none;
+		background-image: none;
+		max-height: unset;
   }
 
   #commits_fabian.inactive {
