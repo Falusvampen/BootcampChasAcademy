@@ -131,28 +131,28 @@ p {
 }
 
 .back-link {
-	display: none;
+  display: none;
 }
 
 .table-container {
-	grid-column-start: 1;
-	grid-column-end: -1;
-	justify-self: center;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  justify-self: center;
 }
 
 .table-heading {
-	justify-self: center;
-	max-width: 90%;
+  justify-self: center;
+  text-align: center;
 }
 
 table {
-	max-width: 90%;
-	justify-self: center;
-	margin-bottom: 5%;
+  justify-self: center;
+	width: 100%;
 }
 
 td {
-	outline: 2px solid white;
+  padding: 0.5em;
+  outline: 2px solid white;
 }
 
 @keyframes animationIn {
