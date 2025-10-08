@@ -130,6 +130,10 @@ p {
   display: none;
 }
 
+.back-link {
+	display: none;
+}
+
 @keyframes animationIn {
   from {
     opacity: 0;
