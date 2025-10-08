@@ -3,7 +3,7 @@ const fabian = document.querySelector(".profilecomp.fabian");
 const contentWrapper = document.querySelector(".content-wrapper-team");
 const contentWrapperStyle = window.getComputedStyle(contentWrapper);
 
-// Event listener för scroll som sedan kör animationerna läggs bara till på mobilversionen av sidan
+// Läggs bara till på mobilversionen av sidan, när main content wrapper har display: block
 if (contentWrapperStyle.display == "block") {
   window.addEventListener("scroll", mobileAnimation);
 }
