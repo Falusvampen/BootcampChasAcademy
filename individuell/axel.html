@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,15 @@
 
     <link rel="stylesheet" href="../css/axel.css" />
     <link rel="stylesheet" href="../css/commit.css" />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
     <script src="../scripts/setBasePath.js"></script>
   </head>
 
@@ -30,7 +39,7 @@
           <div class="profile-content">
             <div class="profile-image-container">
               <img
-                src="images/Axel.webp"
+                src="../images/Axel.webp"
                 alt="En kille med glasögon och ryggsäck står framför en bergskedja"
               />
             </div>
@@ -88,7 +97,31 @@
               </ul>
             </div>
           </div>
-
+          <div
+            id="image-carousel"
+            class="splide"
+            aria-label="images from lighthouse and validator"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img
+                    src="../images/lighthouse_axel_desktop.webp"
+                    alt="Lighthouse Desktop"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="../images/lighthouse_axel_mobile.webp"
+                    alt="Lighthouse Mobile"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img src="../images/validator_axel.webp" alt="Validator" />
+                </li>
+              </ul>
+            </div>
+          </div>
           <div
             id="commit-container"
             data-component="commit-section"
@@ -100,8 +133,11 @@
         </section>
       </div>
     </main>
+    <script>
+      new Splide("#image-carousel").mount();
+    </script>
 
     <div id="footer-container" data-component="footer"></div>
-    <script type="module" src="scripts/loadComponent.js"></script>
+    <script type="module" src="../scripts/loadComponent.js"></script>
   </body>
 </html>
