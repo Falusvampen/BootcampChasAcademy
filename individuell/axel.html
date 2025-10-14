@@ -19,7 +19,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
-    <script src="../scripts/setBasePath.js"></script>
+    <script type="module" src="../scripts/setBasePath.js"></script>
   </head>
 
   <body>
@@ -39,7 +39,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
           <div class="profile-content">
             <div class="profile-image-container">
               <img
-                src="images/Axel.webp"
+                src="../images/Axel.webp"
                 alt="En kille med glasögon och ryggsäck står framför en bergskedja"
               />
             </div>
@@ -63,40 +63,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
             </div>
           </div>
 
-          <div class="skills-section">
-            <div class="skill-category">
-              <h3>Verktyg</h3>
-              <ul class="skills-list">
-                <li>Next</li>
-                <li>Nuxt</li>
-                <li>Angular</li>
-                <li>Relay</li>
-                <li>Jenkins</li>
-                <li>Docker</li>
-                <li>SonarCloud</li>
-                <li>Jest</li>
-                <li>Sanity</li>
-                <li>Spring Boot</li>
-                <li>Github Actions</li>
-                <li>AWS</li>
-                <li>Flutter</li>
-              </ul>
-            </div>
-
-            <div class="skill-category">
-              <h3>Språk</h3>
-              <ul class="skills-list">
-                <li>TypeScript</li>
-                <li>Java</li>
-                <li>Golang</li>
-                <li>Python</li>
-                <li>Rust</li>
-                <li>Swift</li>
-                <li>Kotlin</li>
-                <li>Dart</li>
-              </ul>
-            </div>
-          </div>
+          <div class="skills-section" id="skills-container"></div>
           <div
             id="image-carousel"
             class="splide"
@@ -106,18 +73,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
               <ul class="splide__list">
                 <li class="splide__slide">
                   <img
-                    src="images/lighthouse_axel_desktop.webp"
+                    src="../images/lighthouse_axel_desktop.webp"
                     alt="Lighthouse Desktop"
                   />
                 </li>
                 <li class="splide__slide">
                   <img
-                    src="images/lighthouse_axel_mobile.webp"
+                    src="../images/lighthouse_axel_mobile.webp"
                     alt="Lighthouse Mobile"
                   />
                 </li>
                 <li class="splide__slide">
-                  <img src="images/validator_axel.webp" alt="Validator" />
+                  <img src="../images/validator_axel.webp" alt="Validator" />
                 </li>
               </ul>
             </div>
@@ -133,11 +100,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
         </section>
       </div>
     </main>
+
     <script>
       new Splide("#image-carousel").mount();
     </script>
 
     <div id="footer-container" data-component="footer"></div>
-    <script type="module" src="scripts/loadComponent.js"></script>
+    <script type="module" src="../scripts/loadComponent.js"></script>
+    <script type="module" src="../scripts/renderSkills.js"></script>
   </body>
 </html>
