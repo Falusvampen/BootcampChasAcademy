@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../css/siri.css" />
     <link rel="stylesheet" href="../css/siri_media.css" />
     <link rel="stylesheet" href="../css/commit.css" />
-    <script src="../scripts/setBasePath.js"></script>
-    <script src="scripts/siri_with_json.js" defer></script>
+    <script type="module" src="../scripts/setBasePath.js"></script>
+    <script src="../scripts/siri_with_json.js" defer></script>
   </head>
   <body>
     <div id="header-container" data-component="header"></div>
@@ -28,7 +28,7 @@
         <section class="flex-container">
           <img
             class="profileimg flex-item"
-            src="images/Siri.webp"
+            src="../images/Siri.webp"
             alt="En brunhårig tjej ler mot kameran"
           />
 
@@ -88,6 +88,6 @@
     </main>
 
     <div id="footer-container" data-component="footer"></div>
-    <script type="module" src="scripts/loadComponent.js"></script>
+    <script type="module" src="../scripts/loadComponent.js"></script>
   </body>
 </html>

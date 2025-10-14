@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet the team</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/global_media.css" />
+    <link rel="stylesheet" href="css/team.css" />
+    <link rel="stylesheet" href="css/team_media.css" />
+    <script type="module" src="scripts/setBasePath.js"></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Meet the team</title>
-	<link rel="stylesheet" href="css/global.css">
-	<link rel="stylesheet" href="css/global_media.css">
-	<link rel="stylesheet" href="css/team.css">
-	<link rel="stylesheet" href="css/team_media.css">
-	<script src="scripts/setBasePath.js"></script>
-</head>
+  <body>
+    <div id="header-container" data-component="header"></div>
 
-<body>
-	<div id="header-container" data-component="header"></div>
+    <main class="team_main">
+      <div class="main-content-wrapper content-wrapper-team">
+        <section
+          class="hero"
+          role="banner"
+          aria-label="En bärbar dator belyst av reflektioner i orange, rosa och lila färg"
+        >
+          <h1>The team</h1>
+        </section>
 
-	<main class="team_main">
-		<div class="main-content-wrapper content-wrapper-team">
+        <section class="profiles"></section>
+      </div>
+    </main>
 
-			<section class="hero" role="banner" aria-label="En bärbar dator belyst av reflektioner i orange, rosa och lila färg">
-				<h1>The team</h1>
-			</section>
+    <div id="footer-container" data-component="footer"></div>
 
-			<section class="profiles">
-				
-			</section>
-		</div>
-	</main>
-
-	<div id="footer-container" data-component="footer"></div>
-
-	<script src="scripts/team.js"></script>
-	<script type="module" src="scripts/loadComponent.js"></script>
-</body>
+    <script src="scripts/team.js"></script>
+    <script type="module" src="scripts/loadComponent.js"></script>
+  </body>
+</html>

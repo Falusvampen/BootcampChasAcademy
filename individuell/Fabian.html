@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Individuell sida - Fabian Yousif</title>
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/global_media.css">
-    <link rel="stylesheet" href="../css/fabians_page/Fabian.css">
-    <link rel="stylesheet" href="../css/fabians_page/Media.css">
-    <link rel="stylesheet" href="../css/commit.css">
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/global_media.css" />
+    <link rel="stylesheet" href="../css/fabians_page/Fabian.css" />
+    <link rel="stylesheet" href="../css/fabians_page/Media.css" />
+    <link rel="stylesheet" href="../css/commit.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    >
-    <script src="../scripts/setBasePath.js"></script>
+    />
+    <script type="module" src="../scripts/setBasePath.js"></script>
   </head>
 
   <body>
@@ -33,9 +33,9 @@
           <article class="profile">
             <img
               class="profileimg"
-              src="images/Fabian.webp"
+              src="../images/Fabian.webp"
               alt="En kille med blå luvtröja står framför en å"
-            >
+            />
 
             <h2 id="h2_fabian">Reflektion över projektet</h2>
 
@@ -91,19 +91,19 @@
 
               <img
                 class="images img1"
-                src="images/Lighthouse_fabian.webp"
+                src="../images/Lighthouse_fabian.webp"
                 alt="Lighthouse rapport för datorversionen av sidan"
-              >
+              />
               <img
                 class="images img2"
-                src="images/Lighthouse_mobile_fabian.webp"
+                src="../images/Lighthouse_mobile_fabian.webp"
                 alt="Lighthouse rapport för mobilversionen av sidan"
-              >
+              />
               <img
                 class="images img3"
-                src="images/Fabians_page_validation.webp"
+                src="../images/Fabians_page_validation.webp"
                 alt="Resultatet för HTML valideringen av sidan"
-              >
+              />
             </div>
 
             <button
@@ -112,39 +112,58 @@
             >
               <i class="bi bi-arrow-right arrows"></i>
             </button>
-
           </div>
 
-					<section class="table-container">
-					<h2 class="table-heading">Commits genom git log - Fabian144</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Hash</th>
-								<th>Date</th>
-								<th>Message</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr><td>b169ae9</td><td>2025-10-08</td><td>Added team page link on personal page on smaller screens</td></tr>
-							<tr><td>889d334</td><td>2025-10-08</td><td>Better commit section on mobile</td></tr>
-							<tr><td>17d7fcb</td><td>2025-10-08</td><td>Fixed script after class name changes</td></tr>
-							<tr><td>2cc76dc</td><td>2025-10-08</td><td>All class names now in english</td></tr>
-							<tr><td>51c39bc</td><td>2025-10-08</td><td>Comment changes in team page script</td></tr>
-						</tbody>
-					</table>
-				</section>
+          <section class="table-container">
+            <h2 class="table-heading">Commits genom git log - Fabian144</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Hash</th>
+                  <th>Date</th>
+                  <th>Message</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>b169ae9</td>
+                  <td>2025-10-08</td>
+                  <td>
+                    Added team page link on personal page on smaller screens
+                  </td>
+                </tr>
+                <tr>
+                  <td>889d334</td>
+                  <td>2025-10-08</td>
+                  <td>Better commit section on mobile</td>
+                </tr>
+                <tr>
+                  <td>17d7fcb</td>
+                  <td>2025-10-08</td>
+                  <td>Fixed script after class name changes</td>
+                </tr>
+                <tr>
+                  <td>2cc76dc</td>
+                  <td>2025-10-08</td>
+                  <td>All class names now in english</td>
+                </tr>
+                <tr>
+                  <td>51c39bc</td>
+                  <td>2025-10-08</td>
+                  <td>Comment changes in team page script</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
 
-				<a href="team.html" class="back-link">← Back to the team</a>
-
+          <a href="team.html" class="back-link">← Back to the team</a>
         </div>
       </div>
     </main>
 
     <div id="footer-container" data-component="footer"></div>
 
-    <script src="scripts/Fabian.js"></script>
-    <script type="module" src="scripts/loadComponent.js"></script>
+    <script src="../scripts/Fabian.js"></script>
+    <script type="module" src="../scripts/loadComponent.js"></script>
   </body>
-
 </html>
