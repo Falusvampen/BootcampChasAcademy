@@ -1,39 +1,41 @@
-const skillsData = [
+const skillsDataJSON = `[
   {
-    category: "Verktyg",
-    skills: [
-      { name: "Next", link: "https://nextjs.org/" },
-      { name: "Nuxt", link: "https://nuxt.com/" },
-      { name: "Angular", link: "https://angular.dev/" },
-      { name: "Relay", link: "https://relay.dev/" },
-      { name: "Jenkins", link: "https://www.jenkins.io/" },
-      { name: "Docker", link: "https://www.docker.com/" },
+    "category": "Verktyg",
+    "skills": [
+      { "name": "Next", "link": "https://nextjs.org/" },
+      { "name": "Nuxt", "link": "https://nuxt.com/" },
+      { "name": "Angular", "link": "https://angular.dev/" },
+      { "name": "Relay", "link": "https://relay.dev/" },
+      { "name": "Jenkins", "link": "https://www.jenkins.io/" },
+      { "name": "Docker", "link": "https://www.docker.com/" },
       {
-        name: "SonarCloud",
-        link: "https://www.sonarsource.com/products/sonarcloud/",
+        "name": "SonarCloud",
+        "link": "https://www.sonarsource.com/products/sonarcloud/"
       },
-      { name: "Jest", link: "https://jestjs.io/" },
-      { name: "Sanity", link: "https://www.sanity.io/" },
-      { name: "Spring Boot", link: "https://spring.io/projects/spring-boot" },
-      { name: "Github Actions", link: "https://github.com/features/actions" },
-      { name: "AWS", link: "https://aws.amazon.com/" },
-      { name: "Flutter", link: "https://flutter.dev/" },
-    ],
+      { "name": "Jest", "link": "https://jestjs.io/" },
+      { "name": "Sanity", "link": "https://www.sanity.io/" },
+      { "name": "Spring Boot", "link": "https://spring.io/projects/spring-boot" },
+      { "name": "Github Actions", "link": "https://github.com/features/actions" },
+      { "name": "AWS", "link": "https://aws.amazon.com/" },
+      { "name": "Flutter", "link": "https://flutter.dev/" }
+    ]
   },
   {
-    category: "Språk",
-    skills: [
-      { name: "TypeScript", link: "https://www.typescriptlang.org/" },
-      { name: "Java", link: "https://dev.java/" },
-      { name: "Golang", link: "https://go.dev/" },
-      { name: "Python", link: "https://www.python.org/" },
-      { name: "Rust", link: "https://www.rust-lang.org/" },
-      { name: "Swift", link: "https://developer.apple.com/swift/" },
-      { name: "Kotlin", link: "https://kotlinlang.org/" },
-      { name: "Dart", link: "https://dart.dev/" },
-    ],
-  },
-];
+    "category": "Språk",
+    "skills": [
+      { "name": "TypeScript", "link": "https://www.typescriptlang.org/" },
+      { "name": "Java", "link": "https://dev.java/" },
+      { "name": "Golang", "link": "https://go.dev/" },
+      { "name": "Python", "link": "https://www.python.org/" },
+      { "name": "Rust", "link": "https://www.rust-lang.org/" },
+      { "name": "Swift", "link": "https://developer.apple.com/swift/" },
+      { "name": "Kotlin", "link": "https://kotlinlang.org/" },
+      { "name": "Dart", "link": "https://dart.dev/" }
+    ]
+  }
+]`;
+
+const skillsData = JSON.parse(skillsDataJSON);
 
 /**
  * Skapar ett listelement (<li>) för en enskild kompetens.
