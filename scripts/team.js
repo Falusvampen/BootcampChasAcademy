@@ -1,3 +1,55 @@
+const membersJsonString = `{
+	"members": [
+		{
+			"name": "Siri",
+			"description": "Grafisk designer som vill bredda sig inom webb. Gillar alla möjliga kreativa grejer och hoppas att programmering kan bli mitt nästa kreativa utlopp.",
+			"className": "siri",
+			"src": "images/Siri.webp",
+			"alt": "En brunhårig tjej ler mot kameran",
+			"href": "individuell/siri.html"
+		},
+		{
+			"name": "Axel",
+			"description": "Älskar att lära mig nya saker, brinner för utforskande, skapande, förbättring och framförallt att ha kul under tiden. Letar alltid efter nya projekt och äventyr.",
+			"className": "axel",
+			"src": "images/Axel.webp",
+			"alt": "En kille med glasögon och ryggsäck står framför en bergskedja",
+			"href": "individuell/axel.html"
+		},
+		{
+			"name": "Fabian",
+			"description": "Nyfiken och lösningsorienterad. Har byggt en del av sidan som du är på just nu och förhoppningsvis många fler i framtiden :)",
+			"className": "fabian",
+			"src": "images/Fabian.webp",
+			"alt": "En kille med blå luvtröja står framför en å",
+			"href": "individuell/Fabian.html"
+		}
+	]
+}`;
+
+function parseJson(membersAsString) {
+  return JSON.parse(membersAsString);
+}
+
+const membersData = parseJson(membersJsonString);
+
+let items = ""
+
+for (const member of membersData.members) {
+	items += `<figure class="profilecomp ${member.className}">
+					<img class="profileimg" src="${member.src}" alt="${member.alt}">
+					<h2 class="profileheading">
+						<a class="profilelink" href="${member.href}">${member.name}</a>
+					</h2>
+					<figcaption class="profiletext ">
+						${member.description}
+					</figcaption>
+				</figure>`
+}
+
+document.querySelector(".profiles").innerHTML = items
+
+
 const axel = document.querySelector(".profilecomp.axel");
 const fabian = document.querySelector(".profilecomp.fabian");
 const contentWrapper = document.querySelector(".content-wrapper-team");
@@ -25,34 +77,3 @@ function mobileAnimation() {
     window.removeEventListener("scroll", mobileAnimation);
   }
 }
-
-const membersJsonString = `{
-	"members": [
-		{
-			"name": "Siri",
-			"description": "Grafisk designer som vill bredda sig inom webb. Gillar alla möjliga kreativa grejer och hoppas att programmering kan bli mitt nästa kreativa utlopp."
-		},
-		{
-			"name": "Axel",
-			"description": "Älskar att lära mig nya saker, brinner för utforskande, skapande, förbättring och framförallt att ha kul under tiden. Letar alltid efter nya projekt och äventyr."
-		},
-		{
-			"name": "Fabian",
-			"description": "Nyfiken och lösningsorienterad. Har byggt en del av sidan som du är på just nu och förhoppningsvis många fler i framtiden :)"
-		}
-	]
-}`;
-
-function parseJson(membersAsString) {
-  return JSON.parse(membersAsString);
-}
-
-const membersData = parseJson(membersJsonString);
-
-document.querySelector(".profilelink.siri").innerText = membersData.members[0].name;
-document.querySelector(".profilelink.axel").innerText = membersData.members[1].name;
-document.querySelector(".profilelink.fabian").innerText = membersData.members[2].name;
-
-document.querySelector(".profiletext.siri").innerText = membersData.members[0].description;
-document.querySelector(".profiletext.axel").innerText = membersData.members[1].description;
-document.querySelector(".profiletext.fabian").innerText = membersData.members[2].description;
