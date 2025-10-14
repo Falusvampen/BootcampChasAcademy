@@ -1,0 +1,16 @@
+{
+	"members": [
+		{
+			"name": "Siri",
+			"description": "Grafisk designer som vill bredda sig inom webb. Gillar alla möjliga kreativa grejer och hoppas att programmering kan bli mitt nästa kreativa utlopp."
+		},
+		{
+			"name": "Axel",
+			"description": "Älskar att lära mig nya saker, brinner för utforskande, skapande, förbättring och framförallt att ha kul under tiden. Letar alltid efter nya projekt och äventyr."
+		},
+		{
+			"name": "Fabian",
+			"description": "Nyfiken och lösningsorienterad. Har byggt en del av sidan som du är på just nu och förhoppningsvis många fler i framtiden :)"
+		}
+	]
+}
